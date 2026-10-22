@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Course materials (instructor's slides; not ours to redistribute)
+Chapter_3__Community_Detection_export/
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+# Office lock files
+~$*

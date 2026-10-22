@@ -1,0 +1,14 @@
+Choice,Value
+Sample,"LCC of users with music data: n = 7,431, m = 27,045"
+Eigen-decomposition,"scipy.sparse.linalg.eigsh, top 30 eigenpairs by |eigenvalue|"
+k-means,"scikit-learn KMeans, 20 random starts, seed 236"
+Number of communities K,K* = 11: largest relative eigengap of L_τ in 3..20; checked with community sizes and edge-subsampling stability (no music data used)
+SCORE truncation,ratios truncated at ±log n (Jin 2015)
+SCORE+ regularization τ,"τ = d̄ = 7.28 (Lec9 slide 28); published default 0.1·d_max = 21.4 re-introduces localization (tab02), reported as robustness"
+SCORE+ threshold t,"t = 0.1 (Jin, Ke & Luo 2021 default)"
+Louvain,networkx.community.louvain_communities defaults; resolution γ = 0.25 chosen so K ≈ K* (default γ=1 gives K = 28); seed 236
+Similarity,Jaccard index of liked-artist sets
+Test statistic,T = mean of within-community means − mean of between-community means
+Permutation strata,5×5 quantile bins of degree × #artists (main); country (confounder check)
+# permutations,"1000 (main and country tests), 200 (robustness)"
+Simulation,"DCBM/SBM with parameters estimated from the real data, 20 replications per setting"

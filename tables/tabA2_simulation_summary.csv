@@ -1,0 +1,15 @@
+,,NMI,NMI,ARI,ARI
+,,mean,std,mean,std
+setting,method,,,,
+"DCBM, truth = Louvain",Louvain,0.926,0.021,0.923,0.049
+"DCBM, truth = Louvain",SCORE,0.647,0.051,0.542,0.062
+"DCBM, truth = Louvain",SCORE+,0.888,0.008,0.879,0.027
+"DCBM, truth = Louvain",Spectral,0.235,0.008,0.019,0.004
+"DCBM, truth = SCORE+",Louvain,0.742,0.059,0.613,0.112
+"DCBM, truth = SCORE+",SCORE,0.732,0.018,0.703,0.039
+"DCBM, truth = SCORE+",SCORE+,0.838,0.013,0.846,0.028
+"DCBM, truth = SCORE+",Spectral,0.242,0.007,0.026,0.003
+"SBM (no degree heterogeneity), truth = SCORE+",Louvain,0.516,0.065,0.257,0.092
+"SBM (no degree heterogeneity), truth = SCORE+",SCORE,0.753,0.02,0.673,0.061
+"SBM (no degree heterogeneity), truth = SCORE+",SCORE+,0.792,0.029,0.678,0.091
+"SBM (no degree heterogeneity), truth = SCORE+",Spectral,0.765,0.031,0.63,0.069

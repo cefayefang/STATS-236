@@ -1,0 +1,5 @@
+Method,NMI with country,T,null mean (within-country),share of T explained by country,z (within-country),p (within-country),z (country x deg x activity),p (country x deg x activity)
+Spectral,0.14027,0.0468,0.01746,0.37301,28.39144,0.001,18.1391,0.00498
+SCORE,0.50707,0.01542,0.01,0.64817,38.43615,0.001,38.63583,0.00498
+SCORE+,0.52449,0.0212,0.01102,0.52001,64.30541,0.001,62.36144,0.00498
+Louvain,0.6347,0.01976,0.0142,0.71898,6.58461,0.001,3.63886,0.01493

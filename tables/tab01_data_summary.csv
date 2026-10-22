@@ -1,0 +1,18 @@
+Quantity,Value
+Users (raw),"7,624"
+Mutual-follow edges (raw),"27,806"
+Self-loops,0
+Duplicate edges,0
+Connected components (raw graph),1
+Users without music data,173
+Components after dropping them,18
+Users in final sample (LCC),"7,431"
+Edges in final sample,"27,045"
+Distinct artists in final sample,"7,842"
+Mean degree,7.3
+Median degree,4
+Max degree,214
+Mean #artists per user,404.4
+Median #artists per user,408
+Min #users per artist,97
+Countries,18
