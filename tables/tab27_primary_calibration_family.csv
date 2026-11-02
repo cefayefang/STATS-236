@@ -1,0 +1,7 @@
+scenario,scheme,replications,family_size,Holm_family_rejection_fraction,pointwise_MC_low,pointwise_MC_high,assumed_invariant_null
+exact_binned_null,degree_activity_q5,200,3,0.025,0.00816616619084,0.0573743511268,True
+exact_binned_null,degree_exact_activity_q5,200,3,0.015,0.00310410762155,0.0432082819177,True
+smooth_degree_only_stress,degree_activity_q5,200,3,0.17,0.120695623236,0.229371600394,False
+smooth_degree_only_stress,degree_exact_activity_q5,200,3,0.06,0.0313839538935,0.102461831308,True
+planted_music_positive_control,degree_activity_q5,200,3,1,0.981724659645,1,False
+planted_music_positive_control,degree_exact_activity_q5,200,3,1,0.981724659645,1,False

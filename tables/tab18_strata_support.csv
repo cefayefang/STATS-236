@@ -1,0 +1,26 @@
+scheme,method,occupied_strata,min_size,median_size,fraction_users_in_cells_below_10,expected_fraction_labels_changed
+degree_activity_q5,Spectral,20,125,283,0,0.12551381789
+degree_activity_q5,SCORE,20,125,283,0,0.874625328189
+degree_activity_q5,SCORE+ (paper),20,125,283,0,0.550346183892
+degree_activity_q5,SCORE+ (truncated),20,125,283,0,0.84347749879
+degree_activity_q5,Louvain,20,125,283,0,0.828291423167
+country,Spectral,18,15,247.5,0,0.139580846909
+country,SCORE,18,15,247.5,0,0.489465676887
+country,SCORE+ (paper),18,15,247.5,0,0.221757004562
+country,SCORE+ (truncated),18,15,247.5,0,0.421517322836
+country,Louvain,18,15,247.5,0,0.24754092866
+country_degree_activity_q3,Spectral,157,1,26,0.0335082761405,0.101973032871
+country_degree_activity_q3,SCORE,157,1,26,0.0335082761405,0.469640156184
+country_degree_activity_q3,SCORE+ (paper),157,1,26,0.0335082761405,0.210983924312
+country_degree_activity_q3,SCORE+ (truncated),157,1,26,0.0335082761405,0.402322667444
+country_degree_activity_q3,Louvain,157,1,26,0.0335082761405,0.233682954087
+country_degree_activity_q5,Spectral,323,1,11,0.0734759790069,0.0773208665393
+country_degree_activity_q5,SCORE,323,1,11,0.0734759790069,0.459616426938
+country_degree_activity_q5,SCORE+ (paper),323,1,11,0.0734759790069,0.207419364793
+country_degree_activity_q5,SCORE+ (truncated),323,1,11,0.0734759790069,0.391783653044
+country_degree_activity_q5,Louvain,323,1,11,0.0734759790069,0.229603720556
+country_degree_activity_q7,Spectral,620,1,6,0.191225945364,0.0644851327845
+country_degree_activity_q7,SCORE,620,1,6,0.191225945364,0.438690578112
+country_degree_activity_q7,SCORE+ (paper),620,1,6,0.191225945364,0.198163916634
+country_degree_activity_q7,SCORE+ (truncated),620,1,6,0.191225945364,0.375845179513
+country_degree_activity_q7,Louvain,620,1,6,0.191225945364,0.220130801138

@@ -1,0 +1,4 @@
+method,seeds,pairwise_comparisons,mean_pairwise_NMI,minimum_pairwise_NMI,interpretation
+Spectral,10,45,0.980380824652,0.953704018786,Pairwise seed comparisons are dependent; no iid-pair confidence interval.
+SCORE,10,45,0.980125943786,0.917090664369,Pairwise seed comparisons are dependent; no iid-pair confidence interval.
+Louvain,10,45,0.925005059972,0.889176035024,Pairwise seed comparisons are dependent; no iid-pair confidence interval.

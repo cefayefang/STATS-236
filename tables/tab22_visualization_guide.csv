@@ -1,0 +1,7 @@
+figure,research_question,what_it_shows,statistical_caveat,suggested_placement
+fig11_core_networks,Community structure,"Same graph and layout, colored by three graph-only partitions","Matched colors are a visual relabeling, not shared or true community identities.",Main results
+fig12_core_music_heatmaps,Social circle = music circle?,"Shared-scale block music similarity, with community sizes",Cells are descriptive means; community IDs are method specific.,Main results or appendix
+fig06_permutation_nulls,Social circle = music circle?,Within/between mean Jaccard and degree/activity permutation reference,Null ranges are not population effect confidence intervals.,Main results
+fig13_weighting_sensitivity,Does the method matter?,Equal-community versus equal-user-pair contrasts,These are different estimands; a negative contrast does not establish a negative causal effect.,Main results or sensitivity
+fig07_method_comparison,Does the method matter?,Partition agreement and hub placement for the original three methods,"NMI measures agreement, not accuracy against known labels.",Methods comparison
+fig03_K_selection,Community structure,Graph-only eigengap selection and edge-deletion stability,"Eigengap is a heuristic; error bars are perturbation SD, not confidence intervals for true K.",Methodology

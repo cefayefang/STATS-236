@@ -1,0 +1,481 @@
+setting,rep,method,information_regime,degree_sd,within_between_ratio,target_K,estimated_K,NMI,ARI,retained_fraction,n_full,n_common,resolution,full_graph_LCC_fraction,expected_mean_degree,maximum_probability,theta_min,theta_max,theta_sd
+degree_sd=0; within/between=3,0,Spectral,known_K_assisted,0,3,3,3,0.642901836001,0.721167520315,0.998333333333,600,599,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,0,SCORE,known_K_assisted,0,3,3,3,0.645343545494,0.72549650426,0.998333333333,600,599,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,0,Louvain,known_K_assisted,0,3,3,4,0.191353019067,0.206757004528,0.998333333333,600,599,0.875,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,0,Louvain (fixed resolution),fixed_resolution_reference,0,3,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=8,0,Spectral,known_K_assisted,0,8,3,3,0.990432870326,0.994991638796,0.998333333333,600,599,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,0,SCORE,known_K_assisted,0,8,3,3,1,1,0.998333333333,600,599,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,0,Louvain,known_K_assisted,0,8,3,3,1,1,0.998333333333,600,599,1,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,0,Louvain (fixed resolution),fixed_resolution_reference,0,8,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.0722891566265,1,1,0
+degree_sd=1.2; within/between=3,0,Spectral,known_K_assisted,1.2,3,3,3,0.273487267285,0.0817176083625,0.998333333333,600,599,,0.998333333333,18,0.33913473302,0.35,2.5,0.778953465333
+degree_sd=1.2; within/between=3,0,SCORE,known_K_assisted,1.2,3,3,3,0.493182587915,0.566139125741,0.998333333333,600,599,,0.998333333333,18,0.33913473302,0.35,2.5,0.778953465333
+degree_sd=1.2; within/between=3,0,Louvain,known_K_assisted,1.2,3,3,3,0.532145534018,0.607269058322,0.998333333333,600,599,0.75,0.998333333333,18,0.33913473302,0.35,2.5,0.778953465333
+degree_sd=1.2; within/between=3,0,Louvain (fixed resolution),fixed_resolution_reference,1.2,3,3,1,0,0,0.998333333333,600,599,0.25,0.998333333333,18,0.33913473302,0.35,2.5,0.778953465333
+degree_sd=1.2; within/between=8,0,Spectral,known_K_assisted,1.2,8,3,3,0.292905055818,0.093078090667,0.998333333333,600,599,,1,18,0.452910891819,0.35,2.5,0.778953465333
+degree_sd=1.2; within/between=8,0,SCORE,known_K_assisted,1.2,8,3,3,0.859664136129,0.911714140786,0.998333333333,600,599,,1,18,0.452910891819,0.35,2.5,0.778953465333
+degree_sd=1.2; within/between=8,0,Louvain,known_K_assisted,1.2,8,3,3,0.881544590799,0.92596366844,0.998333333333,600,599,1,1,18,0.452910891819,0.35,2.5,0.778953465333
+degree_sd=1.2; within/between=8,0,Louvain (fixed resolution),fixed_resolution_reference,1.2,8,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.452910891819,0.35,2.5,0.778953465333
+degree_sd=0; within/between=3,1,Spectral,known_K_assisted,0,3,3,3,0.682749699738,0.760664386651,1,600,600,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,1,SCORE,known_K_assisted,0,3,3,3,0.687203999039,0.764934542234,1,600,600,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,1,Louvain,known_K_assisted,0,3,3,3,0.754210028034,0.823386882025,1,600,600,0.75,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,1,Louvain (fixed resolution),fixed_resolution_reference,0,3,3,1,0,0,1,600,600,0.25,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=8,1,Spectral,known_K_assisted,0,8,3,3,1,1,1,600,600,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,1,SCORE,known_K_assisted,0,8,3,3,1,1,1,600,600,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,1,Louvain,known_K_assisted,0,8,3,3,1,1,1,600,600,1,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,1,Louvain (fixed resolution),fixed_resolution_reference,0,8,3,1,0,0,1,600,600,0.25,1,18,0.0722891566265,1,1,0
+degree_sd=1.2; within/between=3,1,Spectral,known_K_assisted,1.2,3,3,3,0.295922111955,0.0935565222455,1,600,600,,1,18,0.339116316775,0.35,2.5,0.767302788172
+degree_sd=1.2; within/between=3,1,SCORE,known_K_assisted,1.2,3,3,3,0.556031844021,0.632089638776,1,600,600,,1,18,0.339116316775,0.35,2.5,0.767302788172
+degree_sd=1.2; within/between=3,1,Louvain,known_K_assisted,1.2,3,3,3,0.63006385303,0.704533362162,1,600,600,0.75,1,18,0.339116316775,0.35,2.5,0.767302788172
+degree_sd=1.2; within/between=3,1,Louvain (fixed resolution),fixed_resolution_reference,1.2,3,3,1,0,0,1,600,600,0.25,1,18,0.339116316775,0.35,2.5,0.767302788172
+degree_sd=1.2; within/between=8,1,Spectral,known_K_assisted,1.2,8,3,3,0.314274936436,0.109944957647,1,600,600,,1,18,0.45287804645,0.35,2.5,0.767302788172
+degree_sd=1.2; within/between=8,1,SCORE,known_K_assisted,1.2,8,3,3,0.89570166049,0.935901978395,1,600,600,,1,18,0.45287804645,0.35,2.5,0.767302788172
+degree_sd=1.2; within/between=8,1,Louvain,known_K_assisted,1.2,8,3,3,0.938167145778,0.965222402263,1,600,600,1,1,18,0.45287804645,0.35,2.5,0.767302788172
+degree_sd=1.2; within/between=8,1,Louvain (fixed resolution),fixed_resolution_reference,1.2,8,3,1,0,0,1,600,600,0.25,1,18,0.45287804645,0.35,2.5,0.767302788172
+degree_sd=0; within/between=3,2,Spectral,known_K_assisted,0,3,3,3,0.682506057675,0.752889665605,1,600,600,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,2,SCORE,known_K_assisted,0,3,3,3,0.68219338414,0.753307982489,1,600,600,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,2,Louvain,known_K_assisted,0,3,3,3,0.606751085852,0.678364415729,1,600,600,0.75,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,2,Louvain (fixed resolution),fixed_resolution_reference,0,3,3,1,0,0,1,600,600,0.25,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=8,2,Spectral,known_K_assisted,0,8,3,3,1,1,1,600,600,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,2,SCORE,known_K_assisted,0,8,3,3,1,1,1,600,600,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,2,Louvain,known_K_assisted,0,8,3,3,1,1,1,600,600,1,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,2,Louvain (fixed resolution),fixed_resolution_reference,0,8,3,1,0,0,1,600,600,0.25,1,18,0.0722891566265,1,1,0
+degree_sd=1.2; within/between=3,2,Spectral,known_K_assisted,1.2,3,3,3,0.317817108434,0.114853034441,1,600,600,,1,18,0.339116178631,0.35,2.5,0.767214720376
+degree_sd=1.2; within/between=3,2,SCORE,known_K_assisted,1.2,3,3,3,0.545691637788,0.618659444848,1,600,600,,1,18,0.339116178631,0.35,2.5,0.767214720376
+degree_sd=1.2; within/between=3,2,Louvain,known_K_assisted,1.2,3,3,3,0.551185284487,0.619123737665,1,600,600,0.75,1,18,0.339116178631,0.35,2.5,0.767214720376
+degree_sd=1.2; within/between=3,2,Louvain (fixed resolution),fixed_resolution_reference,1.2,3,3,1,0,0,1,600,600,0.25,1,18,0.339116178631,0.35,2.5,0.767214720376
+degree_sd=1.2; within/between=8,2,Spectral,known_K_assisted,1.2,8,3,3,0.352151760969,0.147846884299,1,600,600,,1,18,0.452877800074,0.35,2.5,0.767214720376
+degree_sd=1.2; within/between=8,2,SCORE,known_K_assisted,1.2,8,3,3,0.856905794919,0.906809171494,1,600,600,,1,18,0.452877800074,0.35,2.5,0.767214720376
+degree_sd=1.2; within/between=8,2,Louvain,known_K_assisted,1.2,8,3,3,0.932822085746,0.960281048672,1,600,600,1,1,18,0.452877800074,0.35,2.5,0.767214720376
+degree_sd=1.2; within/between=8,2,Louvain (fixed resolution),fixed_resolution_reference,1.2,8,3,1,0,0,1,600,600,0.25,1,18,0.452877800074,0.35,2.5,0.767214720376
+degree_sd=0; within/between=3,3,Spectral,known_K_assisted,0,3,3,3,0.658696268754,0.734321895762,1,600,600,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,3,SCORE,known_K_assisted,0,3,3,3,0.6631039192,0.738790050067,1,600,600,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,3,Louvain,known_K_assisted,0,3,3,3,0.0901607169837,0.0853998171231,1,600,600,0.75,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,3,Louvain (fixed resolution),fixed_resolution_reference,0,3,3,1,0,0,1,600,600,0.25,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=8,3,Spectral,known_K_assisted,0,8,3,3,1,1,1,600,600,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,3,SCORE,known_K_assisted,0,8,3,3,1,1,1,600,600,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,3,Louvain,known_K_assisted,0,8,3,3,1,1,1,600,600,1,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,3,Louvain (fixed resolution),fixed_resolution_reference,0,8,3,1,0,0,1,600,600,0.25,1,18,0.0722891566265,1,1,0
+degree_sd=1.2; within/between=3,3,Spectral,known_K_assisted,1.2,3,3,3,0.274115837747,0.0763504554988,1,600,600,,1,18,0.339142863632,0.35,2.5,0.784041653601
+degree_sd=1.2; within/between=3,3,SCORE,known_K_assisted,1.2,3,3,3,0.54554664164,0.623767344207,1,600,600,,1,18,0.339142863632,0.35,2.5,0.784041653601
+degree_sd=1.2; within/between=3,3,Louvain,known_K_assisted,1.2,3,3,3,0.568862480299,0.643186209917,1,600,600,0.875,1,18,0.339142863632,0.35,2.5,0.784041653601
+degree_sd=1.2; within/between=3,3,Louvain (fixed resolution),fixed_resolution_reference,1.2,3,3,1,0,0,1,600,600,0.25,1,18,0.339142863632,0.35,2.5,0.784041653601
+degree_sd=1.2; within/between=8,3,Spectral,known_K_assisted,1.2,8,3,3,0.310442953719,0.106244312578,1,600,600,,1,18,0.452925393145,0.35,2.5,0.784041653601
+degree_sd=1.2; within/between=8,3,SCORE,known_K_assisted,1.2,8,3,3,0.91795853626,0.950512256374,1,600,600,,1,18,0.452925393145,0.35,2.5,0.784041653601
+degree_sd=1.2; within/between=8,3,Louvain,known_K_assisted,1.2,8,3,3,0.94027320598,0.965260757769,1,600,600,1,1,18,0.452925393145,0.35,2.5,0.784041653601
+degree_sd=1.2; within/between=8,3,Louvain (fixed resolution),fixed_resolution_reference,1.2,8,3,1,0,0,1,600,600,0.25,1,18,0.452925393145,0.35,2.5,0.784041653601
+degree_sd=0; within/between=3,4,Spectral,known_K_assisted,0,3,3,3,0.681216903306,0.755305545984,0.998333333333,600,599,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,4,SCORE,known_K_assisted,0,3,3,3,0.68020461303,0.755408604808,0.998333333333,600,599,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,4,Louvain,known_K_assisted,0,3,3,3,0.69585732021,0.769816725769,0.998333333333,600,599,0.75,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,4,Louvain (fixed resolution),fixed_resolution_reference,0,3,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=8,4,Spectral,known_K_assisted,0,8,3,3,1,1,0.998333333333,600,599,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,4,SCORE,known_K_assisted,0,8,3,3,1,1,0.998333333333,600,599,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,4,Louvain,known_K_assisted,0,8,3,3,0.990429034945,0.994979076175,0.998333333333,600,599,1,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,4,Louvain (fixed resolution),fixed_resolution_reference,0,8,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.0722891566265,1,1,0
+degree_sd=1.2; within/between=3,4,Spectral,known_K_assisted,1.2,3,3,3,0.320611395881,0.116311209957,0.998333333333,600,599,,1,18,0.339106987001,0.35,2.5,0.761331960927
+degree_sd=1.2; within/between=3,4,SCORE,known_K_assisted,1.2,3,3,3,0.560717478901,0.638880901971,0.998333333333,600,599,,1,18,0.339106987001,0.35,2.5,0.761331960927
+degree_sd=1.2; within/between=3,4,Louvain,known_K_assisted,1.2,3,3,3,0.634402549536,0.712801839057,0.998333333333,600,599,0.75,1,18,0.339106987001,0.35,2.5,0.761331960927
+degree_sd=1.2; within/between=3,4,Louvain (fixed resolution),fixed_resolution_reference,1.2,3,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.339106987001,0.35,2.5,0.761331960927
+degree_sd=1.2; within/between=8,4,Spectral,known_K_assisted,1.2,8,3,3,0.350657490823,0.146082047613,0.998333333333,600,599,,0.998333333333,18,0.452861407256,0.35,2.5,0.761331960927
+degree_sd=1.2; within/between=8,4,SCORE,known_K_assisted,1.2,8,3,3,0.872790720775,0.921276273654,0.998333333333,600,599,,0.998333333333,18,0.452861407256,0.35,2.5,0.761331960927
+degree_sd=1.2; within/between=8,4,Louvain,known_K_assisted,1.2,8,3,3,0.906230135225,0.945525784159,0.998333333333,600,599,1,0.998333333333,18,0.452861407256,0.35,2.5,0.761331960927
+degree_sd=1.2; within/between=8,4,Louvain (fixed resolution),fixed_resolution_reference,1.2,8,3,1,0,0,0.998333333333,600,599,0.25,0.998333333333,18,0.452861407256,0.35,2.5,0.761331960927
+degree_sd=0; within/between=3,5,Spectral,known_K_assisted,0,3,3,3,0.627110095729,0.705080987961,1,600,600,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,5,SCORE,known_K_assisted,0,3,3,3,0.626775197655,0.705154010572,1,600,600,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,5,Louvain,known_K_assisted,0,3,3,3,0.592390861459,0.630047538663,1,600,600,0.75,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,5,Louvain (fixed resolution),fixed_resolution_reference,0,3,3,1,0,0,1,600,600,0.25,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=8,5,Spectral,known_K_assisted,0,8,3,3,0.980893814429,0.990004166859,1,600,600,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,5,SCORE,known_K_assisted,0,8,3,3,0.980893814429,0.990004166859,1,600,600,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,5,Louvain,known_K_assisted,0,8,3,3,0.990445010868,0.994995812518,1,600,600,1,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,5,Louvain (fixed resolution),fixed_resolution_reference,0,8,3,1,0,0,1,600,600,0.25,1,18,0.0722891566265,1,1,0
+degree_sd=1.2; within/between=3,5,Spectral,known_K_assisted,1.2,3,3,3,0.285094149958,0.0848068319579,1,600,600,,1,18,0.339098877275,0.35,2.5,0.756103360797
+degree_sd=1.2; within/between=3,5,SCORE,known_K_assisted,1.2,3,3,3,0.512214605387,0.580364455705,1,600,600,,1,18,0.339098877275,0.35,2.5,0.756103360797
+degree_sd=1.2; within/between=3,5,Louvain,known_K_assisted,1.2,3,3,3,0.597715051545,0.675979843965,1,600,600,0.75,1,18,0.339098877275,0.35,2.5,0.756103360797
+degree_sd=1.2; within/between=3,5,Louvain (fixed resolution),fixed_resolution_reference,1.2,3,3,1,0,0,1,600,600,0.25,1,18,0.339098877275,0.35,2.5,0.756103360797
+degree_sd=1.2; within/between=8,5,Spectral,known_K_assisted,1.2,8,3,3,0.332497114804,0.127566235062,1,600,600,,1,18,0.452846944207,0.35,2.5,0.756103360797
+degree_sd=1.2; within/between=8,5,SCORE,known_K_assisted,1.2,8,3,3,0.89570166049,0.935901978395,1,600,600,,1,18,0.452846944207,0.35,2.5,0.756103360797
+degree_sd=1.2; within/between=8,5,Louvain,known_K_assisted,1.2,8,3,3,0.916685314305,0.950573922581,1,600,600,1,1,18,0.452846944207,0.35,2.5,0.756103360797
+degree_sd=1.2; within/between=8,5,Louvain (fixed resolution),fixed_resolution_reference,1.2,8,3,1,0,0,1,600,600,0.25,1,18,0.452846944207,0.35,2.5,0.756103360797
+degree_sd=0; within/between=3,6,Spectral,known_K_assisted,0,3,3,3,0.668675233139,0.738948906421,0.998333333333,600,599,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,6,SCORE,known_K_assisted,0,3,3,3,0.663923210475,0.73474173861,0.998333333333,600,599,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,6,Louvain,known_K_assisted,0,3,3,4,0.422496546039,0.471146442613,0.998333333333,600,599,0.875,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,6,Louvain (fixed resolution),fixed_resolution_reference,0,3,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=8,6,Spectral,known_K_assisted,0,8,3,3,1,1,0.998333333333,600,599,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,6,SCORE,known_K_assisted,0,8,3,3,1,1,0.998333333333,600,599,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,6,Louvain,known_K_assisted,0,8,3,3,1,1,0.998333333333,600,599,1,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,6,Louvain (fixed resolution),fixed_resolution_reference,0,8,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.0722891566265,1,1,0
+degree_sd=1.2; within/between=3,6,Spectral,known_K_assisted,1.2,3,3,3,0.277811417114,0.0787862555632,0.998333333333,600,599,,0.998333333333,18,0.339123894107,0.35,2.5,0.772117878288
+degree_sd=1.2; within/between=3,6,SCORE,known_K_assisted,1.2,3,3,3,0.529958738894,0.603908986827,0.998333333333,600,599,,0.998333333333,18,0.339123894107,0.35,2.5,0.772117878288
+degree_sd=1.2; within/between=3,6,Louvain,known_K_assisted,1.2,3,3,3,0.638776655505,0.710032416924,0.998333333333,600,599,0.75,0.998333333333,18,0.339123894107,0.35,2.5,0.772117878288
+degree_sd=1.2; within/between=3,6,Louvain (fixed resolution),fixed_resolution_reference,1.2,3,3,1,0,0,0.998333333333,600,599,0.25,0.998333333333,18,0.339123894107,0.35,2.5,0.772117878288
+degree_sd=1.2; within/between=8,6,Spectral,known_K_assisted,1.2,8,3,3,0.308492820277,0.103955341939,0.998333333333,600,599,,1,18,0.452891560475,0.35,2.5,0.772117878288
+degree_sd=1.2; within/between=8,6,SCORE,known_K_assisted,1.2,8,3,3,0.887729273802,0.930993233383,0.998333333333,600,599,,1,18,0.452891560475,0.35,2.5,0.772117878288
+degree_sd=1.2; within/between=8,6,Louvain,known_K_assisted,1.2,8,3,3,0.937288759247,0.965143107101,0.998333333333,600,599,1,1,18,0.452891560475,0.35,2.5,0.772117878288
+degree_sd=1.2; within/between=8,6,Louvain (fixed resolution),fixed_resolution_reference,1.2,8,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.452891560475,0.35,2.5,0.772117878288
+degree_sd=0; within/between=3,7,Spectral,known_K_assisted,0,3,3,3,0.603808243641,0.679480607431,0.998333333333,600,599,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,7,SCORE,known_K_assisted,0,3,3,3,0.614391196745,0.692237874193,0.998333333333,600,599,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,7,Louvain,known_K_assisted,0,3,3,2,0.318378331373,0.31444820635,0.998333333333,600,599,0.75,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,7,Louvain (fixed resolution),fixed_resolution_reference,0,3,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=8,7,Spectral,known_K_assisted,0,8,3,3,1,1,0.998333333333,600,599,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,7,SCORE,known_K_assisted,0,8,3,3,0.990432816542,0.994991681092,0.998333333333,600,599,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,7,Louvain,known_K_assisted,0,8,3,3,1,1,0.998333333333,600,599,1,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,7,Louvain (fixed resolution),fixed_resolution_reference,0,8,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.0722891566265,1,1,0
+degree_sd=1.2; within/between=3,7,Spectral,known_K_assisted,1.2,3,3,3,0.316990259324,0.112914231989,0.998333333333,600,599,,0.998333333333,18,0.339101711672,0.35,2.5,0.757934915763
+degree_sd=1.2; within/between=3,7,SCORE,known_K_assisted,1.2,3,3,3,0.453426992067,0.519375851811,0.998333333333,600,599,,0.998333333333,18,0.339101711672,0.35,2.5,0.757934915763
+degree_sd=1.2; within/between=3,7,Louvain,known_K_assisted,1.2,3,3,3,0.550511436479,0.619084866078,0.998333333333,600,599,0.75,0.998333333333,18,0.339101711672,0.35,2.5,0.757934915763
+degree_sd=1.2; within/between=3,7,Louvain (fixed resolution),fixed_resolution_reference,1.2,3,3,1,0,0,0.998333333333,600,599,0.25,0.998333333333,18,0.339101711672,0.35,2.5,0.757934915763
+degree_sd=1.2; within/between=8,7,Spectral,known_K_assisted,1.2,8,3,3,0.330256959116,0.12617883058,0.998333333333,600,599,,1,18,0.452851999101,0.35,2.5,0.757934915763
+degree_sd=1.2; within/between=8,7,SCORE,known_K_assisted,1.2,8,3,3,0.86625177326,0.916420371024,0.998333333333,600,599,,1,18,0.452851999101,0.35,2.5,0.757934915763
+degree_sd=1.2; within/between=8,7,Louvain,known_K_assisted,1.2,8,3,3,0.92774867564,0.960222706241,0.998333333333,600,599,0.5,1,18,0.452851999101,0.35,2.5,0.757934915763
+degree_sd=1.2; within/between=8,7,Louvain (fixed resolution),fixed_resolution_reference,1.2,8,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.452851999101,0.35,2.5,0.757934915763
+degree_sd=0; within/between=3,8,Spectral,known_K_assisted,0,3,3,3,0.682433241113,0.75707074428,1,600,600,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,8,SCORE,known_K_assisted,0,3,3,3,0.678592887957,0.75289041172,1,600,600,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,8,Louvain,known_K_assisted,0,3,3,3,0.383499850486,0.416119186337,1,600,600,0.75,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,8,Louvain (fixed resolution),fixed_resolution_reference,0,3,3,1,0,0,1,600,600,0.25,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=8,8,Spectral,known_K_assisted,0,8,3,3,1,1,1,600,600,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,8,SCORE,known_K_assisted,0,8,3,3,1,1,1,600,600,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,8,Louvain,known_K_assisted,0,8,3,3,1,1,1,600,600,1,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,8,Louvain (fixed resolution),fixed_resolution_reference,0,8,3,1,0,0,1,600,600,0.25,1,18,0.0722891566265,1,1,0
+degree_sd=1.2; within/between=3,8,Spectral,known_K_assisted,1.2,3,3,3,0.285021884847,0.0846719577598,1,600,600,,1,18,0.339117146361,0.35,2.5,0.767831438962
+degree_sd=1.2; within/between=3,8,SCORE,known_K_assisted,1.2,3,3,3,0.50829910186,0.583794545156,1,600,600,,1,18,0.339117146361,0.35,2.5,0.767831438962
+degree_sd=1.2; within/between=3,8,Louvain,known_K_assisted,1.2,3,3,3,0.593343523744,0.666957377859,1,600,600,0.75,1,18,0.339117146361,0.35,2.5,0.767831438962
+degree_sd=1.2; within/between=3,8,Louvain (fixed resolution),fixed_resolution_reference,1.2,3,3,1,0,0,1,600,600,0.25,1,18,0.339117146361,0.35,2.5,0.767831438962
+degree_sd=1.2; within/between=8,8,Spectral,known_K_assisted,1.2,8,3,3,0.318254401789,0.113980242643,1,600,600,,1,18,0.45287952599,0.35,2.5,0.767831438962
+degree_sd=1.2; within/between=8,8,SCORE,known_K_assisted,1.2,8,3,3,0.889044330551,0.931063399945,1,600,600,,1,18,0.45287952599,0.35,2.5,0.767831438962
+degree_sd=1.2; within/between=8,8,Louvain,known_K_assisted,1.2,8,3,3,0.924054115264,0.955291786865,1,600,600,1,1,18,0.45287952599,0.35,2.5,0.767831438962
+degree_sd=1.2; within/between=8,8,Louvain (fixed resolution),fixed_resolution_reference,1.2,8,3,1,0,0,1,600,600,0.25,1,18,0.45287952599,0.35,2.5,0.767831438962
+degree_sd=0; within/between=3,9,Spectral,known_K_assisted,0,3,3,3,0.630760404157,0.707705343745,0.996666666667,600,598,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,9,SCORE,known_K_assisted,0,3,3,3,0.64395421856,0.721652293877,0.996666666667,600,598,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,9,Louvain,known_K_assisted,0,3,3,3,0.447323181264,0.448895899911,0.996666666667,600,598,0.75,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,9,Louvain (fixed resolution),fixed_resolution_reference,0,3,3,1,0,0,0.996666666667,600,598,0.25,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=8,9,Spectral,known_K_assisted,0,8,3,3,1,1,0.996666666667,600,598,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,9,SCORE,known_K_assisted,0,8,3,3,1,1,0.996666666667,600,598,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,9,Louvain,known_K_assisted,0,8,3,3,1,1,0.996666666667,600,598,1,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,9,Louvain (fixed resolution),fixed_resolution_reference,0,8,3,1,0,0,0.996666666667,600,598,0.25,1,18,0.0722891566265,1,1,0
+degree_sd=1.2; within/between=3,9,Spectral,known_K_assisted,1.2,3,3,3,0.261951840949,0.0676222614594,0.996666666667,600,598,,1,18,0.339155380166,0.35,2.5,0.791810201229
+degree_sd=1.2; within/between=3,9,SCORE,known_K_assisted,1.2,3,3,3,0.500672573262,0.576126623971,0.996666666667,600,598,,1,18,0.339155380166,0.35,2.5,0.791810201229
+degree_sd=1.2; within/between=3,9,Louvain,known_K_assisted,1.2,3,3,3,0.538827726776,0.617888240949,0.996666666667,600,598,0.75,1,18,0.339155380166,0.35,2.5,0.791810201229
+degree_sd=1.2; within/between=3,9,Louvain (fixed resolution),fixed_resolution_reference,1.2,3,3,1,0,0,0.996666666667,600,598,0.25,1,18,0.339155380166,0.35,2.5,0.791810201229
+degree_sd=1.2; within/between=8,9,Spectral,known_K_assisted,1.2,8,3,3,0.285949658619,0.0855958830611,0.996666666667,600,598,,0.996666666667,18,0.452947717424,0.35,2.5,0.791810201229
+degree_sd=1.2; within/between=8,9,SCORE,known_K_assisted,1.2,8,3,3,0.851951024294,0.901675007379,0.996666666667,600,598,,0.996666666667,18,0.452947717424,0.35,2.5,0.791810201229
+degree_sd=1.2; within/between=8,9,Louvain,known_K_assisted,1.2,8,3,3,0.866847212285,0.916257677299,0.996666666667,600,598,0.5,0.996666666667,18,0.452947717424,0.35,2.5,0.791810201229
+degree_sd=1.2; within/between=8,9,Louvain (fixed resolution),fixed_resolution_reference,1.2,8,3,1,0,0,0.996666666667,600,598,0.25,0.996666666667,18,0.452947717424,0.35,2.5,0.791810201229
+degree_sd=0; within/between=3,10,Spectral,known_K_assisted,0,3,3,3,0.673996490803,0.746934011458,0.998333333333,600,599,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,10,SCORE,known_K_assisted,0,3,3,3,0.673996490803,0.746934011458,0.998333333333,600,599,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,10,Louvain,known_K_assisted,0,3,3,3,0.725505311322,0.800110205905,0.998333333333,600,599,0.75,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,10,Louvain (fixed resolution),fixed_resolution_reference,0,3,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=8,10,Spectral,known_K_assisted,0,8,3,3,0.980865613993,0.989983362185,0.998333333333,600,599,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,10,SCORE,known_K_assisted,0,8,3,3,0.980865613993,0.989983362185,0.998333333333,600,599,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,10,Louvain,known_K_assisted,0,8,3,3,0.990432870326,0.994991638796,0.998333333333,600,599,1,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,10,Louvain (fixed resolution),fixed_resolution_reference,0,8,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.0722891566265,1,1,0
+degree_sd=1.2; within/between=3,10,Spectral,known_K_assisted,1.2,3,3,3,0.284016439543,0.0843335063914,0.998333333333,600,599,,0.998333333333,18,0.339107714244,0.35,2.5,0.761799072213
+degree_sd=1.2; within/between=3,10,SCORE,known_K_assisted,1.2,3,3,3,0.473132696789,0.545315001417,0.998333333333,600,599,,0.998333333333,18,0.339107714244,0.35,2.5,0.761799072213
+degree_sd=1.2; within/between=3,10,Louvain,known_K_assisted,1.2,3,3,3,0.598529326946,0.675425851203,0.998333333333,600,599,0.75,0.998333333333,18,0.339107714244,0.35,2.5,0.761799072213
+degree_sd=1.2; within/between=3,10,Louvain (fixed resolution),fixed_resolution_reference,1.2,3,3,1,0,0,0.998333333333,600,599,0.25,0.998333333333,18,0.339107714244,0.35,2.5,0.761799072213
+degree_sd=1.2; within/between=8,10,Spectral,known_K_assisted,1.2,8,3,3,0.321945495355,0.117112383059,0.998333333333,600,599,,0.998333333333,18,0.452862704247,0.35,2.5,0.761799072213
+degree_sd=1.2; within/between=8,10,SCORE,known_K_assisted,1.2,8,3,3,0.882862241393,0.926288950075,0.998333333333,600,599,,0.998333333333,18,0.452862704247,0.35,2.5,0.761799072213
+degree_sd=1.2; within/between=8,10,Louvain,known_K_assisted,1.2,8,3,3,0.926048869711,0.955233188022,0.998333333333,600,599,1,0.998333333333,18,0.452862704247,0.35,2.5,0.761799072213
+degree_sd=1.2; within/between=8,10,Louvain (fixed resolution),fixed_resolution_reference,1.2,8,3,1,0,0,0.998333333333,600,599,0.25,0.998333333333,18,0.452862704247,0.35,2.5,0.761799072213
+degree_sd=0; within/between=3,11,Spectral,known_K_assisted,0,3,3,3,0.654078726031,0.724853045024,0.998333333333,600,599,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,11,SCORE,known_K_assisted,0,3,3,3,0.671363840649,0.747176975861,0.998333333333,600,599,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,11,Louvain,known_K_assisted,0,3,3,3,0.544331985286,0.603666583668,0.998333333333,600,599,0.75,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,11,Louvain (fixed resolution),fixed_resolution_reference,0,3,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=8,11,Spectral,known_K_assisted,0,8,3,3,1,1,0.998333333333,600,599,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,11,SCORE,known_K_assisted,0,8,3,3,1,1,0.998333333333,600,599,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,11,Louvain,known_K_assisted,0,8,3,3,1,1,0.998333333333,600,599,1,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,11,Louvain (fixed resolution),fixed_resolution_reference,0,8,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.0722891566265,1,1,0
+degree_sd=1.2; within/between=3,11,Spectral,known_K_assisted,1.2,3,3,3,0.289310086375,0.0883542484513,0.998333333333,600,599,,1,18,0.339131393749,0.35,2.5,0.776854002992
+degree_sd=1.2; within/between=3,11,SCORE,known_K_assisted,1.2,3,3,3,0.473983259918,0.544030155901,0.998333333333,600,599,,1,18,0.339131393749,0.35,2.5,0.776854002992
+degree_sd=1.2; within/between=3,11,Louvain,known_K_assisted,1.2,3,3,3,0.621014314889,0.697092221442,0.998333333333,600,599,0.75,1,18,0.339131393749,0.35,2.5,0.776854002992
+degree_sd=1.2; within/between=3,11,Louvain (fixed resolution),fixed_resolution_reference,1.2,3,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.339131393749,0.35,2.5,0.776854002992
+degree_sd=1.2; within/between=8,11,Spectral,known_K_assisted,1.2,8,3,3,0.312969640714,0.108810614625,0.998333333333,600,599,,0.998333333333,18,0.452904936141,0.35,2.5,0.776854002992
+degree_sd=1.2; within/between=8,11,SCORE,known_K_assisted,1.2,8,3,3,0.860054390778,0.911652342417,0.998333333333,600,599,,0.998333333333,18,0.452904936141,0.35,2.5,0.776854002992
+degree_sd=1.2; within/between=8,11,Louvain,known_K_assisted,1.2,8,3,3,0.906711631216,0.940536891538,0.998333333333,600,599,1,0.998333333333,18,0.452904936141,0.35,2.5,0.776854002992
+degree_sd=1.2; within/between=8,11,Louvain (fixed resolution),fixed_resolution_reference,1.2,8,3,1,0,0,0.998333333333,600,599,0.25,0.998333333333,18,0.452904936141,0.35,2.5,0.776854002992
+degree_sd=0; within/between=3,12,Spectral,known_K_assisted,0,3,3,3,0.70806267003,0.776497719381,0.995,600,597,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,12,SCORE,known_K_assisted,0,3,3,3,0.72725770286,0.799259991881,0.995,600,597,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,12,Louvain,known_K_assisted,0,3,3,3,0.640806182633,0.702380082157,0.995,600,597,0.75,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,12,Louvain (fixed resolution),fixed_resolution_reference,0,3,3,1,0,0,0.995,600,597,0.25,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=8,12,Spectral,known_K_assisted,0,8,3,3,0.990404529603,0.994970730111,0.995,600,597,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,12,SCORE,known_K_assisted,0,8,3,3,0.990404529603,0.994970730111,0.995,600,597,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,12,Louvain,known_K_assisted,0,8,3,3,1,1,0.995,600,597,1,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,12,Louvain (fixed resolution),fixed_resolution_reference,0,8,3,1,0,0,0.995,600,597,0.25,1,18,0.0722891566265,1,1,0
+degree_sd=1.2; within/between=3,12,Spectral,known_K_assisted,1.2,3,3,3,0.302621792184,0.0992589103946,0.995,600,597,,0.998333333333,18,0.339151515981,0.35,2.5,0.78942006407
+degree_sd=1.2; within/between=3,12,SCORE,known_K_assisted,1.2,3,3,3,0.581990325529,0.658258062632,0.995,600,597,,0.998333333333,18,0.339151515981,0.35,2.5,0.78942006407
+degree_sd=1.2; within/between=3,12,Louvain,known_K_assisted,1.2,3,3,3,0.648051361022,0.725479239826,0.995,600,597,0.75,0.998333333333,18,0.339151515981,0.35,2.5,0.78942006407
+degree_sd=1.2; within/between=3,12,Louvain (fixed resolution),fixed_resolution_reference,1.2,3,3,1,0,0,0.995,600,597,0.25,0.998333333333,18,0.339151515981,0.35,2.5,0.78942006407
+degree_sd=1.2; within/between=8,12,Spectral,known_K_assisted,1.2,8,3,3,0.326614861747,0.121670543581,0.995,600,597,,0.996666666667,18,0.45294082527,0.35,2.5,0.78942006407
+degree_sd=1.2; within/between=8,12,SCORE,known_K_assisted,1.2,8,3,3,0.919800273152,0.950493359993,0.995,600,597,,0.996666666667,18,0.45294082527,0.35,2.5,0.78942006407
+degree_sd=1.2; within/between=8,12,Louvain,known_K_assisted,1.2,8,3,3,0.937613064474,0.960050484766,0.995,600,597,1,0.996666666667,18,0.45294082527,0.35,2.5,0.78942006407
+degree_sd=1.2; within/between=8,12,Louvain (fixed resolution),fixed_resolution_reference,1.2,8,3,1,0,0,0.995,600,597,0.25,0.996666666667,18,0.45294082527,0.35,2.5,0.78942006407
+degree_sd=0; within/between=3,13,Spectral,known_K_assisted,0,3,3,3,0.74843359362,0.818338442392,0.996666666667,600,598,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,13,SCORE,known_K_assisted,0,3,3,3,0.764666472575,0.831953442579,0.996666666667,600,598,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,13,Louvain,known_K_assisted,0,3,3,3,0.631777720104,0.696505628141,0.996666666667,600,598,0.75,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,13,Louvain (fixed resolution),fixed_resolution_reference,0,3,3,1,0,0,0.996666666667,600,598,0.25,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=8,13,Spectral,known_K_assisted,0,8,3,3,0.990416817731,0.994974888801,0.996666666667,600,598,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,13,SCORE,known_K_assisted,0,8,3,3,0.990416817731,0.994974888801,0.996666666667,600,598,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,13,Louvain,known_K_assisted,0,8,3,3,1,1,0.996666666667,600,598,1,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,13,Louvain (fixed resolution),fixed_resolution_reference,0,8,3,1,0,0,0.996666666667,600,598,0.25,1,18,0.0722891566265,1,1,0
+degree_sd=1.2; within/between=3,13,Spectral,known_K_assisted,1.2,3,3,3,0.281193831743,0.082574718762,0.996666666667,600,598,,0.998333333333,18,0.339142829815,0.35,2.5,0.784020560014
+degree_sd=1.2; within/between=3,13,SCORE,known_K_assisted,1.2,3,3,3,0.502651356723,0.57906265942,0.996666666667,600,598,,0.998333333333,18,0.339142829815,0.35,2.5,0.784020560014
+degree_sd=1.2; within/between=3,13,Louvain,known_K_assisted,1.2,3,3,3,0.270868063719,0.303395261613,0.996666666667,600,598,0.75,0.998333333333,18,0.339142829815,0.35,2.5,0.784020560014
+degree_sd=1.2; within/between=3,13,Louvain (fixed resolution),fixed_resolution_reference,1.2,3,3,1,0,0,0.996666666667,600,598,0.25,0.998333333333,18,0.339142829815,0.35,2.5,0.784020560014
+degree_sd=1.2; within/between=8,13,Spectral,known_K_assisted,1.2,8,3,3,0.297247588562,0.0951508110093,0.996666666667,600,598,,0.996666666667,18,0.452925332831,0.35,2.5,0.784020560014
+degree_sd=1.2; within/between=8,13,SCORE,known_K_assisted,1.2,8,3,3,0.886634949231,0.930714890375,0.996666666667,600,598,,0.996666666667,18,0.452925332831,0.35,2.5,0.784020560014
+degree_sd=1.2; within/between=8,13,Louvain,known_K_assisted,1.2,8,3,3,0.938002166575,0.965128129858,0.996666666667,600,598,1,0.996666666667,18,0.452925332831,0.35,2.5,0.784020560014
+degree_sd=1.2; within/between=8,13,Louvain (fixed resolution),fixed_resolution_reference,1.2,8,3,1,0,0,0.996666666667,600,598,0.25,0.996666666667,18,0.452925332831,0.35,2.5,0.784020560014
+degree_sd=0; within/between=3,14,Spectral,known_K_assisted,0,3,3,3,0.678692520857,0.748900991954,1,600,600,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,14,SCORE,known_K_assisted,0,3,3,3,0.649342567577,0.72306855848,1,600,600,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,14,Louvain,known_K_assisted,0,3,3,3,0.675412493244,0.745043712804,1,600,600,0.75,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,14,Louvain (fixed resolution),fixed_resolution_reference,0,3,3,1,0,0,1,600,600,0.25,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=8,14,Spectral,known_K_assisted,0,8,3,3,1,1,1,600,600,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,14,SCORE,known_K_assisted,0,8,3,3,1,1,1,600,600,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,14,Louvain,known_K_assisted,0,8,3,3,1,1,1,600,600,1,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,14,Louvain (fixed resolution),fixed_resolution_reference,0,8,3,1,0,0,1,600,600,0.25,1,18,0.0722891566265,1,1,0
+degree_sd=1.2; within/between=3,14,Spectral,known_K_assisted,1.2,3,3,3,0.275974956522,0.0868327626343,1,600,600,,1,18,0.339102908359,0.35,2.5,0.758706864766
+degree_sd=1.2; within/between=3,14,SCORE,known_K_assisted,1.2,3,3,3,0.505577089374,0.580643486974,1,600,600,,1,18,0.339102908359,0.35,2.5,0.758706864766
+degree_sd=1.2; within/between=3,14,Louvain,known_K_assisted,1.2,3,3,3,0.528867838941,0.60274274679,1,600,600,0.75,1,18,0.339102908359,0.35,2.5,0.758706864766
+degree_sd=1.2; within/between=3,14,Louvain (fixed resolution),fixed_resolution_reference,1.2,3,3,1,0,0,1,600,600,0.25,1,18,0.339102908359,0.35,2.5,0.758706864766
+degree_sd=1.2; within/between=8,14,Spectral,known_K_assisted,1.2,8,3,3,0.311267478104,0.107787243097,1,600,600,,1,18,0.452854133294,0.35,2.5,0.758706864766
+degree_sd=1.2; within/between=8,14,SCORE,known_K_assisted,1.2,8,3,3,0.836181536621,0.8880987298,1,600,600,,1,18,0.452854133294,0.35,2.5,0.758706864766
+degree_sd=1.2; within/between=8,14,Louvain,known_K_assisted,1.2,8,3,3,0.920042479985,0.950474841064,1,600,600,1,1,18,0.452854133294,0.35,2.5,0.758706864766
+degree_sd=1.2; within/between=8,14,Louvain (fixed resolution),fixed_resolution_reference,1.2,8,3,1,0,0,1,600,600,0.25,1,18,0.452854133294,0.35,2.5,0.758706864766
+degree_sd=0; within/between=3,15,Spectral,known_K_assisted,0,3,3,3,0.616088443689,0.692559182726,1,600,600,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,15,SCORE,known_K_assisted,0,3,3,3,0.60677333768,0.684173919805,1,600,600,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,15,Louvain,known_K_assisted,0,3,3,3,0.529093511309,0.585182245526,1,600,600,0.75,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,15,Louvain (fixed resolution),fixed_resolution_reference,0,3,3,1,0,0,1,600,600,0.25,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=8,15,Spectral,known_K_assisted,0,8,3,3,0.990445010868,0.994995812518,1,600,600,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,15,SCORE,known_K_assisted,0,8,3,3,1,1,1,600,600,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,15,Louvain,known_K_assisted,0,8,3,3,0.990445010868,0.994995812518,1,600,600,1,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,15,Louvain (fixed resolution),fixed_resolution_reference,0,8,3,1,0,0,1,600,600,0.25,1,18,0.0722891566265,1,1,0
+degree_sd=1.2; within/between=3,15,Spectral,known_K_assisted,1.2,3,3,3,0.303214473921,0.0998385132507,1,600,600,,1,18,0.33909848252,0.35,2.5,0.755847919944
+degree_sd=1.2; within/between=3,15,SCORE,known_K_assisted,1.2,3,3,3,0.490523108765,0.565736217154,1,600,600,,1,18,0.33909848252,0.35,2.5,0.755847919944
+degree_sd=1.2; within/between=3,15,Louvain,known_K_assisted,1.2,3,3,3,0.354908839525,0.370726955416,1,600,600,0.75,1,18,0.33909848252,0.35,2.5,0.755847919944
+degree_sd=1.2; within/between=3,15,Louvain (fixed resolution),fixed_resolution_reference,1.2,3,3,1,0,0,1,600,600,0.25,1,18,0.33909848252,0.35,2.5,0.755847919944
+degree_sd=1.2; within/between=8,15,Spectral,known_K_assisted,1.2,8,3,3,0.330788607898,0.12595214325,1,600,600,,1,18,0.452846240199,0.35,2.5,0.755847919944
+degree_sd=1.2; within/between=8,15,SCORE,known_K_assisted,1.2,8,3,3,0.871562252783,0.91668887546,1,600,600,,1,18,0.452846240199,0.35,2.5,0.755847919944
+degree_sd=1.2; within/between=8,15,Louvain,known_K_assisted,1.2,8,3,3,0.89070690775,0.93095256698,1,600,600,0.5,1,18,0.452846240199,0.35,2.5,0.755847919944
+degree_sd=1.2; within/between=8,15,Louvain (fixed resolution),fixed_resolution_reference,1.2,8,3,1,0,0,1,600,600,0.25,1,18,0.452846240199,0.35,2.5,0.755847919944
+degree_sd=0; within/between=3,16,Spectral,known_K_assisted,0,3,3,3,0.601994066307,0.675572737943,1,600,600,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,16,SCORE,known_K_assisted,0,3,3,3,0.614978874531,0.692202984858,1,600,600,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,16,Louvain,known_K_assisted,0,3,3,3,0.734701158365,0.802232868387,1,600,600,0.75,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,16,Louvain (fixed resolution),fixed_resolution_reference,0,3,3,1,0,0,1,600,600,0.25,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=8,16,Spectral,known_K_assisted,0,8,3,3,0.990445010868,0.994995812518,1,600,600,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,16,SCORE,known_K_assisted,0,8,3,3,0.990445010868,0.994995812518,1,600,600,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,16,Louvain,known_K_assisted,0,8,3,3,1,1,1,600,600,1,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,16,Louvain (fixed resolution),fixed_resolution_reference,0,8,3,1,0,0,1,600,600,0.25,1,18,0.0722891566265,1,1,0
+degree_sd=1.2; within/between=3,16,Spectral,known_K_assisted,1.2,3,3,3,0.308129417931,0.111498804061,1,600,600,,1,18,0.339114814585,0.35,2.5,0.766344587127
+degree_sd=1.2; within/between=3,16,SCORE,known_K_assisted,1.2,3,3,3,0.5450355354,0.623140854247,1,600,600,,1,18,0.339114814585,0.35,2.5,0.766344587127
+degree_sd=1.2; within/between=3,16,Louvain,known_K_assisted,1.2,3,3,3,0.631503389458,0.708860020744,1,600,600,0.75,1,18,0.339114814585,0.35,2.5,0.766344587127
+degree_sd=1.2; within/between=3,16,Louvain (fixed resolution),fixed_resolution_reference,1.2,3,3,1,0,0,1,600,600,0.25,1,18,0.339114814585,0.35,2.5,0.766344587127
+degree_sd=1.2; within/between=8,16,Spectral,known_K_assisted,1.2,8,3,3,0.32122035356,0.116177104168,1,600,600,,1,18,0.452875367346,0.35,2.5,0.766344587127
+degree_sd=1.2; within/between=8,16,SCORE,known_K_assisted,1.2,8,3,3,0.870618633641,0.916615733763,1,600,600,,1,18,0.452875367346,0.35,2.5,0.766344587127
+degree_sd=1.2; within/between=8,16,Louvain,known_K_assisted,1.2,8,3,3,0.916697579365,0.950610923551,1,600,600,1,1,18,0.452875367346,0.35,2.5,0.766344587127
+degree_sd=1.2; within/between=8,16,Louvain (fixed resolution),fixed_resolution_reference,1.2,8,3,1,0,0,1,600,600,0.25,1,18,0.452875367346,0.35,2.5,0.766344587127
+degree_sd=0; within/between=3,17,Spectral,known_K_assisted,0,3,3,3,0.627878299209,0.702279632494,1,600,600,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,17,SCORE,known_K_assisted,0,3,3,3,0.630879782685,0.706296786165,1,600,600,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,17,Louvain,known_K_assisted,0,3,3,3,0.747540177452,0.818789296695,1,600,600,0.75,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,17,Louvain (fixed resolution),fixed_resolution_reference,0,3,3,1,0,0,1,600,600,0.25,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=8,17,Spectral,known_K_assisted,0,8,3,3,1,1,1,600,600,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,17,SCORE,known_K_assisted,0,8,3,3,1,1,1,600,600,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,17,Louvain,known_K_assisted,0,8,3,3,1,1,1,600,600,1,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,17,Louvain (fixed resolution),fixed_resolution_reference,0,8,3,1,0,0,1,600,600,0.25,1,18,0.0722891566265,1,1,0
+degree_sd=1.2; within/between=3,17,Spectral,known_K_assisted,1.2,3,3,3,0.279606484256,0.0805085808035,1,600,600,,1,18,0.33911452091,0.35,2.5,0.7661571199
+degree_sd=1.2; within/between=3,17,SCORE,known_K_assisted,1.2,3,3,3,0.504482144028,0.576448162834,1,600,600,,1,18,0.33911452091,0.35,2.5,0.7661571199
+degree_sd=1.2; within/between=3,17,Louvain,known_K_assisted,1.2,3,3,3,0.580899225527,0.65567593713,1,600,600,0.75,1,18,0.33911452091,0.35,2.5,0.7661571199
+degree_sd=1.2; within/between=3,17,Louvain (fixed resolution),fixed_resolution_reference,1.2,3,3,1,0,0,1,600,600,0.25,1,18,0.33911452091,0.35,2.5,0.7661571199
+degree_sd=1.2; within/between=8,17,Spectral,known_K_assisted,1.2,8,3,3,0.32338069079,0.118565479151,1,600,600,,1,18,0.452874843588,0.35,2.5,0.7661571199
+degree_sd=1.2; within/between=8,17,SCORE,known_K_assisted,1.2,8,3,3,0.861071388679,0.911651778681,1,600,600,,1,18,0.452874843588,0.35,2.5,0.7661571199
+degree_sd=1.2; within/between=8,17,Louvain,known_K_assisted,1.2,8,3,3,0.906000465082,0.940538435619,1,600,600,1,1,18,0.452874843588,0.35,2.5,0.7661571199
+degree_sd=1.2; within/between=8,17,Louvain (fixed resolution),fixed_resolution_reference,1.2,8,3,1,0,0,1,600,600,0.25,1,18,0.452874843588,0.35,2.5,0.7661571199
+degree_sd=0; within/between=3,18,Spectral,known_K_assisted,0,3,3,3,0.654287476507,0.723603875385,0.998333333333,600,599,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,18,SCORE,known_K_assisted,0,3,3,3,0.66141255252,0.728524173107,0.998333333333,600,599,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,18,Louvain,known_K_assisted,0,3,3,3,0.757086829011,0.824007122725,0.998333333333,600,599,0.75,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,18,Louvain (fixed resolution),fixed_resolution_reference,0,3,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=8,18,Spectral,known_K_assisted,0,8,3,3,0.980865740652,0.989983277592,0.998333333333,600,599,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,18,SCORE,known_K_assisted,0,8,3,3,0.980865740652,0.989983277592,0.998333333333,600,599,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,18,Louvain,known_K_assisted,0,8,3,3,0.980865740652,0.989983277592,0.998333333333,600,599,1,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,18,Louvain (fixed resolution),fixed_resolution_reference,0,8,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.0722891566265,1,1,0
+degree_sd=1.2; within/between=3,18,Spectral,known_K_assisted,1.2,3,3,3,0.312103366621,0.10721060607,0.998333333333,600,599,,0.998333333333,18,0.339159079254,0.35,2.5,0.794091429476
+degree_sd=1.2; within/between=3,18,SCORE,known_K_assisted,1.2,3,3,3,0.515396354635,0.590878759114,0.998333333333,600,599,,0.998333333333,18,0.339159079254,0.35,2.5,0.794091429476
+degree_sd=1.2; within/between=3,18,Louvain,known_K_assisted,1.2,3,3,3,0.558231859242,0.626175012274,0.998333333333,600,599,0.75,0.998333333333,18,0.339159079254,0.35,2.5,0.794091429476
+degree_sd=1.2; within/between=3,18,Louvain (fixed resolution),fixed_resolution_reference,1.2,3,3,1,0,0,0.998333333333,600,599,0.25,0.998333333333,18,0.339159079254,0.35,2.5,0.794091429476
+degree_sd=1.2; within/between=8,18,Spectral,known_K_assisted,1.2,8,3,3,0.310715316771,0.106358853682,0.998333333333,600,599,,1,18,0.45295431516,0.35,2.5,0.794091429476
+degree_sd=1.2; within/between=8,18,SCORE,known_K_assisted,1.2,8,3,3,0.859259234717,0.911627175729,0.998333333333,600,599,,1,18,0.45295431516,0.35,2.5,0.794091429476
+degree_sd=1.2; within/between=8,18,Louvain,known_K_assisted,1.2,8,3,3,0.876862420993,0.916772142249,0.998333333333,600,599,1,1,18,0.45295431516,0.35,2.5,0.794091429476
+degree_sd=1.2; within/between=8,18,Louvain (fixed resolution),fixed_resolution_reference,1.2,8,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.45295431516,0.35,2.5,0.794091429476
+degree_sd=0; within/between=3,19,Spectral,known_K_assisted,0,3,3,3,0.619448020493,0.696093417442,0.998333333333,600,599,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,19,SCORE,known_K_assisted,0,3,3,3,0.604620101492,0.678998769361,0.998333333333,600,599,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,19,Louvain,known_K_assisted,0,3,3,3,0.229916769443,0.173592742619,0.998333333333,600,599,0.6875,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,19,Louvain (fixed resolution),fixed_resolution_reference,0,3,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=8,19,Spectral,known_K_assisted,0,8,3,3,0.990432816542,0.994991681092,0.998333333333,600,599,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,19,SCORE,known_K_assisted,0,8,3,3,0.990432816542,0.994991681092,0.998333333333,600,599,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,19,Louvain,known_K_assisted,0,8,3,3,1,1,0.998333333333,600,599,1,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,19,Louvain (fixed resolution),fixed_resolution_reference,0,8,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.0722891566265,1,1,0
+degree_sd=1.2; within/between=3,19,Spectral,known_K_assisted,1.2,3,3,3,0.273002280566,0.0778738232511,0.998333333333,600,599,,0.998333333333,18,0.339110205332,0.35,2.5,0.763396926938
+degree_sd=1.2; within/between=3,19,SCORE,known_K_assisted,1.2,3,3,3,0.519523807554,0.595522348373,0.998333333333,600,599,,0.998333333333,18,0.339110205332,0.35,2.5,0.763396926938
+degree_sd=1.2; within/between=3,19,Louvain,known_K_assisted,1.2,3,3,3,0.599588772137,0.679416454048,0.998333333333,600,599,0.75,0.998333333333,18,0.339110205332,0.35,2.5,0.763396926938
+degree_sd=1.2; within/between=3,19,Louvain (fixed resolution),fixed_resolution_reference,1.2,3,3,1,0,0,0.998333333333,600,599,0.25,0.998333333333,18,0.339110205332,0.35,2.5,0.763396926938
+degree_sd=1.2; within/between=8,19,Spectral,known_K_assisted,1.2,8,3,3,0.294908757275,0.093080080041,0.998333333333,600,599,,1,18,0.452867146955,0.35,2.5,0.763396926938
+degree_sd=1.2; within/between=8,19,SCORE,known_K_assisted,1.2,8,3,3,0.884536146281,0.926287082632,0.998333333333,600,599,,1,18,0.452867146955,0.35,2.5,0.763396926938
+degree_sd=1.2; within/between=8,19,Louvain,known_K_assisted,1.2,8,3,3,0.910432122977,0.945588472187,0.998333333333,600,599,1,1,18,0.452867146955,0.35,2.5,0.763396926938
+degree_sd=1.2; within/between=8,19,Louvain (fixed resolution),fixed_resolution_reference,1.2,8,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.452867146955,0.35,2.5,0.763396926938
+degree_sd=0; within/between=3,20,Spectral,known_K_assisted,0,3,3,3,0.687737429213,0.751630095673,1,600,600,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,20,SCORE,known_K_assisted,0,3,3,3,0.687835453152,0.751527691503,1,600,600,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,20,Louvain,known_K_assisted,0,3,3,3,0.22247197379,0.239110479469,1,600,600,0.75,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,20,Louvain (fixed resolution),fixed_resolution_reference,0,3,3,1,0,0,1,600,600,0.25,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=8,20,Spectral,known_K_assisted,0,8,3,3,1,1,1,600,600,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,20,SCORE,known_K_assisted,0,8,3,3,1,1,1,600,600,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,20,Louvain,known_K_assisted,0,8,3,3,0.990445010868,0.994995812518,1,600,600,1,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,20,Louvain (fixed resolution),fixed_resolution_reference,0,8,3,1,0,0,1,600,600,0.25,1,18,0.0722891566265,1,1,0
+degree_sd=1.2; within/between=3,20,Spectral,known_K_assisted,1.2,3,3,3,0.259984375637,0.0712140985092,1,600,600,,1,18,0.339093245919,0.35,2.5,0.752451123383
+degree_sd=1.2; within/between=3,20,SCORE,known_K_assisted,1.2,3,3,3,0.522728473221,0.593775445027,1,600,600,,1,18,0.339093245919,0.35,2.5,0.752451123383
+degree_sd=1.2; within/between=3,20,Louvain,known_K_assisted,1.2,3,3,4,0.566605513101,0.62031837196,1,600,600,0.875,1,18,0.339093245919,0.35,2.5,0.752451123383
+degree_sd=1.2; within/between=3,20,Louvain (fixed resolution),fixed_resolution_reference,1.2,3,3,1,0,0,1,600,600,0.25,1,18,0.339093245919,0.35,2.5,0.752451123383
+degree_sd=1.2; within/between=8,20,Spectral,known_K_assisted,1.2,8,3,3,0.325477546388,0.120848618499,1,600,600,,1,18,0.45283690127,0.35,2.5,0.752451123383
+degree_sd=1.2; within/between=8,20,SCORE,known_K_assisted,1.2,8,3,3,0.903144136042,0.940841713478,1,600,600,,1,18,0.45283690127,0.35,2.5,0.752451123383
+degree_sd=1.2; within/between=8,20,Louvain,known_K_assisted,1.2,8,3,3,0.946925775507,0.970188086101,1,600,600,1,1,18,0.45283690127,0.35,2.5,0.752451123383
+degree_sd=1.2; within/between=8,20,Louvain (fixed resolution),fixed_resolution_reference,1.2,8,3,1,0,0,1,600,600,0.25,1,18,0.45283690127,0.35,2.5,0.752451123383
+degree_sd=0; within/between=3,21,Spectral,known_K_assisted,0,3,3,3,0.585110507199,0.663494803514,1,600,600,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,21,SCORE,known_K_assisted,0,3,3,3,0.589582401241,0.660304708493,1,600,600,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,21,Louvain,known_K_assisted,0,3,3,4,0.292410205396,0.318932279944,1,600,600,0.875,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,21,Louvain (fixed resolution),fixed_resolution_reference,0,3,3,1,0,0,1,600,600,0.25,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=8,21,Spectral,known_K_assisted,0,8,3,3,0.990445010868,0.994995812518,1,600,600,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,21,SCORE,known_K_assisted,0,8,3,3,0.990445010868,0.994995812518,1,600,600,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,21,Louvain,known_K_assisted,0,8,3,3,1,1,1,600,600,1,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,21,Louvain (fixed resolution),fixed_resolution_reference,0,8,3,1,0,0,1,600,600,0.25,1,18,0.0722891566265,1,1,0
+degree_sd=1.2; within/between=3,21,Spectral,known_K_assisted,1.2,3,3,3,0.260091060034,0.0671269133223,1,600,600,,1,18,0.339138588356,0.35,2.5,0.781370320301
+degree_sd=1.2; within/between=3,21,SCORE,known_K_assisted,1.2,3,3,3,0.515039716853,0.584929420717,1,600,600,,1,18,0.339138588356,0.35,2.5,0.781370320301
+degree_sd=1.2; within/between=3,21,Louvain,known_K_assisted,1.2,3,3,3,0.586880832116,0.667364420807,1,600,600,0.75,1,18,0.339138588356,0.35,2.5,0.781370320301
+degree_sd=1.2; within/between=3,21,Louvain (fixed resolution),fixed_resolution_reference,1.2,3,3,1,0,0,1,600,600,0.25,1,18,0.339138588356,0.35,2.5,0.781370320301
+degree_sd=1.2; within/between=8,21,Spectral,known_K_assisted,1.2,8,3,3,0.297937063543,0.0954629608005,1,600,600,,1,18,0.452917767963,0.35,2.5,0.781370320301
+degree_sd=1.2; within/between=8,21,SCORE,known_K_assisted,1.2,8,3,3,0.884644441166,0.926277790454,1,600,600,,1,18,0.452917767963,0.35,2.5,0.781370320301
+degree_sd=1.2; within/between=8,21,Louvain,known_K_assisted,1.2,8,3,3,0.917200406342,0.950599421391,1,600,600,1,1,18,0.452917767963,0.35,2.5,0.781370320301
+degree_sd=1.2; within/between=8,21,Louvain (fixed resolution),fixed_resolution_reference,1.2,8,3,1,0,0,1,600,600,0.25,1,18,0.452917767963,0.35,2.5,0.781370320301
+degree_sd=0; within/between=3,22,Spectral,known_K_assisted,0,3,3,3,0.674563310221,0.738348619433,0.998333333333,600,599,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,22,SCORE,known_K_assisted,0,3,3,3,0.683708434864,0.747173050043,0.998333333333,600,599,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,22,Louvain,known_K_assisted,0,3,3,3,0.694213031764,0.766541452112,0.998333333333,600,599,0.75,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,22,Louvain (fixed resolution),fixed_resolution_reference,0,3,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=8,22,Spectral,known_K_assisted,0,8,3,3,0.990429034945,0.994979076175,0.998333333333,600,599,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,22,SCORE,known_K_assisted,0,8,3,3,0.990429034945,0.994979076175,0.998333333333,600,599,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,22,Louvain,known_K_assisted,0,8,3,3,1,1,0.998333333333,600,599,1,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,22,Louvain (fixed resolution),fixed_resolution_reference,0,8,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.0722891566265,1,1,0
+degree_sd=1.2; within/between=3,22,Spectral,known_K_assisted,1.2,3,3,3,0.313113713906,0.116871744875,0.998333333333,600,599,,0.998333333333,18,0.339113860939,0.35,2.5,0.765735659464
+degree_sd=1.2; within/between=3,22,SCORE,known_K_assisted,1.2,3,3,3,0.468995535543,0.541478458748,0.998333333333,600,599,,0.998333333333,18,0.339113860939,0.35,2.5,0.765735659464
+degree_sd=1.2; within/between=3,22,Louvain,known_K_assisted,1.2,3,3,3,0.584360921984,0.663195423138,0.998333333333,600,599,0.75,0.998333333333,18,0.339113860939,0.35,2.5,0.765735659464
+degree_sd=1.2; within/between=3,22,Louvain (fixed resolution),fixed_resolution_reference,1.2,3,3,1,0,0,0.998333333333,600,599,0.25,0.998333333333,18,0.339113860939,0.35,2.5,0.765735659464
+degree_sd=1.2; within/between=8,22,Spectral,known_K_assisted,1.2,8,3,3,0.347516210427,0.143081243177,0.998333333333,600,599,,0.998333333333,18,0.452873666557,0.35,2.5,0.765735659464
+degree_sd=1.2; within/between=8,22,SCORE,known_K_assisted,1.2,8,3,3,0.893463782095,0.935800050459,0.998333333333,600,599,,0.998333333333,18,0.452873666557,0.35,2.5,0.765735659464
+degree_sd=1.2; within/between=8,22,Louvain,known_K_assisted,1.2,8,3,3,0.92947250738,0.955336107006,0.998333333333,600,599,1,0.998333333333,18,0.452873666557,0.35,2.5,0.765735659464
+degree_sd=1.2; within/between=8,22,Louvain (fixed resolution),fixed_resolution_reference,1.2,8,3,1,0,0,0.998333333333,600,599,0.25,0.998333333333,18,0.452873666557,0.35,2.5,0.765735659464
+degree_sd=0; within/between=3,23,Spectral,known_K_assisted,0,3,3,3,0.684813139831,0.756471131295,0.998333333333,600,599,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,23,SCORE,known_K_assisted,0,3,3,3,0.680518110777,0.752282802885,0.998333333333,600,599,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,23,Louvain,known_K_assisted,0,3,3,3,0.488227332291,0.434589178262,0.998333333333,600,599,0.75,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,23,Louvain (fixed resolution),fixed_resolution_reference,0,3,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=8,23,Spectral,known_K_assisted,0,8,3,3,0.990432870326,0.994991638796,0.998333333333,600,599,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,23,SCORE,known_K_assisted,0,8,3,3,0.990432870326,0.994991638796,0.998333333333,600,599,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,23,Louvain,known_K_assisted,0,8,3,3,1,1,0.998333333333,600,599,1,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,23,Louvain (fixed resolution),fixed_resolution_reference,0,8,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.0722891566265,1,1,0
+degree_sd=1.2; within/between=3,23,Spectral,known_K_assisted,1.2,3,3,3,0.302293138595,0.0994701456633,0.998333333333,600,599,,1,18,0.339129660635,0.35,2.5,0.775762105671
+degree_sd=1.2; within/between=3,23,SCORE,known_K_assisted,1.2,3,3,3,0.480360963565,0.55378506926,0.998333333333,600,599,,1,18,0.339129660635,0.35,2.5,0.775762105671
+degree_sd=1.2; within/between=3,23,Louvain,known_K_assisted,1.2,3,3,3,0.527894664008,0.600648887537,0.998333333333,600,599,0.75,1,18,0.339129660635,0.35,2.5,0.775762105671
+degree_sd=1.2; within/between=3,23,Louvain (fixed resolution),fixed_resolution_reference,1.2,3,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.339129660635,0.35,2.5,0.775762105671
+degree_sd=1.2; within/between=8,23,Spectral,known_K_assisted,1.2,8,3,3,0.313041888674,0.108915054961,0.998333333333,600,599,,0.998333333333,18,0.452901845102,0.35,2.5,0.775762105671
+degree_sd=1.2; within/between=8,23,SCORE,known_K_assisted,1.2,8,3,3,0.867040972204,0.916451182603,0.998333333333,600,599,,0.998333333333,18,0.452901845102,0.35,2.5,0.775762105671
+degree_sd=1.2; within/between=8,23,Louvain,known_K_assisted,1.2,8,3,3,0.929851213223,0.96023545792,0.998333333333,600,599,1,0.998333333333,18,0.452901845102,0.35,2.5,0.775762105671
+degree_sd=1.2; within/between=8,23,Louvain (fixed resolution),fixed_resolution_reference,1.2,8,3,1,0,0,0.998333333333,600,599,0.25,0.998333333333,18,0.452901845102,0.35,2.5,0.775762105671
+degree_sd=0; within/between=3,24,Spectral,known_K_assisted,0,3,3,3,0.717955535524,0.791426030229,0.998333333333,600,599,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,24,SCORE,known_K_assisted,0,3,3,3,0.717955535524,0.791426030229,0.998333333333,600,599,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,24,Louvain,known_K_assisted,0,3,3,3,0.70896983417,0.782853565486,0.998333333333,600,599,0.75,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,24,Louvain (fixed resolution),fixed_resolution_reference,0,3,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=8,24,Spectral,known_K_assisted,0,8,3,3,0.990432870326,0.994991638796,0.998333333333,600,599,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,24,SCORE,known_K_assisted,0,8,3,3,0.990432870326,0.994991638796,0.998333333333,600,599,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,24,Louvain,known_K_assisted,0,8,3,3,1,1,0.998333333333,600,599,1,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,24,Louvain (fixed resolution),fixed_resolution_reference,0,8,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.0722891566265,1,1,0
+degree_sd=1.2; within/between=3,24,Spectral,known_K_assisted,1.2,3,3,3,0.278081208481,0.0843925787394,0.998333333333,600,599,,1,18,0.339125573553,0.35,2.5,0.773181010396
+degree_sd=1.2; within/between=3,24,SCORE,known_K_assisted,1.2,3,3,3,0.561397646513,0.634318317493,0.998333333333,600,599,,1,18,0.339125573553,0.35,2.5,0.773181010396
+degree_sd=1.2; within/between=3,24,Louvain,known_K_assisted,1.2,3,3,3,0.691114428285,0.756724415802,0.998333333333,600,599,0.75,1,18,0.339125573553,0.35,2.5,0.773181010396
+degree_sd=1.2; within/between=3,24,Louvain (fixed resolution),fixed_resolution_reference,1.2,3,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.339125573553,0.35,2.5,0.773181010396
+degree_sd=1.2; within/between=8,24,Spectral,known_K_assisted,1.2,8,3,3,0.325594595361,0.120636262706,0.998333333333,600,599,,0.998333333333,18,0.452894555762,0.35,2.5,0.773181010396
+degree_sd=1.2; within/between=8,24,SCORE,known_K_assisted,1.2,8,3,3,0.930645445445,0.960261296551,0.998333333333,600,599,,0.998333333333,18,0.452894555762,0.35,2.5,0.773181010396
+degree_sd=1.2; within/between=8,24,Louvain,known_K_assisted,1.2,8,3,3,0.957201800663,0.975135627403,0.998333333333,600,599,1,0.998333333333,18,0.452894555762,0.35,2.5,0.773181010396
+degree_sd=1.2; within/between=8,24,Louvain (fixed resolution),fixed_resolution_reference,1.2,8,3,1,0,0,0.998333333333,600,599,0.25,0.998333333333,18,0.452894555762,0.35,2.5,0.773181010396
+degree_sd=0; within/between=3,25,Spectral,known_K_assisted,0,3,3,3,0.765972742447,0.836435480076,0.998333333333,600,599,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,25,SCORE,known_K_assisted,0,3,3,3,0.761395904026,0.831857808825,0.998333333333,600,599,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,25,Louvain,known_K_assisted,0,3,3,3,0.723768131791,0.786031284971,0.998333333333,600,599,0.875,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,25,Louvain (fixed resolution),fixed_resolution_reference,0,3,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=8,25,Spectral,known_K_assisted,0,8,3,3,1,1,0.998333333333,600,599,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,25,SCORE,known_K_assisted,0,8,3,3,1,1,0.998333333333,600,599,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,25,Louvain,known_K_assisted,0,8,3,3,1,1,0.998333333333,600,599,1,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,25,Louvain (fixed resolution),fixed_resolution_reference,0,8,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.0722891566265,1,1,0
+degree_sd=1.2; within/between=3,25,Spectral,known_K_assisted,1.2,3,3,3,0.284970128021,0.0860450208947,0.998333333333,600,599,,0.998333333333,18,0.339120997389,0.35,2.5,0.770280709255
+degree_sd=1.2; within/between=3,25,SCORE,known_K_assisted,1.2,3,3,3,0.566948616268,0.646657760354,0.998333333333,600,599,,0.998333333333,18,0.339120997389,0.35,2.5,0.770280709255
+degree_sd=1.2; within/between=3,25,Louvain,known_K_assisted,1.2,3,3,3,0.629581416866,0.70542487286,0.998333333333,600,599,0.75,0.998333333333,18,0.339120997389,0.35,2.5,0.770280709255
+degree_sd=1.2; within/between=3,25,Louvain (fixed resolution),fixed_resolution_reference,1.2,3,3,1,0,0,0.998333333333,600,599,0.25,0.998333333333,18,0.339120997389,0.35,2.5,0.770280709255
+degree_sd=1.2; within/between=8,25,Spectral,known_K_assisted,1.2,8,3,3,0.335150864271,0.133541188728,0.998333333333,600,599,,1,18,0.452886394209,0.35,2.5,0.770280709255
+degree_sd=1.2; within/between=8,25,SCORE,known_K_assisted,1.2,8,3,3,0.902499587794,0.940732700444,0.998333333333,600,599,,1,18,0.452886394209,0.35,2.5,0.770280709255
+degree_sd=1.2; within/between=8,25,Louvain,known_K_assisted,1.2,8,3,3,0.923192926988,0.955303018781,0.998333333333,600,599,1,1,18,0.452886394209,0.35,2.5,0.770280709255
+degree_sd=1.2; within/between=8,25,Louvain (fixed resolution),fixed_resolution_reference,1.2,8,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.452886394209,0.35,2.5,0.770280709255
+degree_sd=0; within/between=3,26,Spectral,known_K_assisted,0,3,3,3,0.747139575615,0.818364871074,1,600,600,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,26,SCORE,known_K_assisted,0,3,3,3,0.752107194196,0.823076966723,1,600,600,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,26,Louvain,known_K_assisted,0,3,3,3,0.827627844656,0.883357337905,1,600,600,0.75,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,26,Louvain (fixed resolution),fixed_resolution_reference,0,3,3,1,0,0,1,600,600,0.25,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=8,26,Spectral,known_K_assisted,0,8,3,3,0.990445010868,0.994995812518,1,600,600,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,26,SCORE,known_K_assisted,0,8,3,3,0.990445010868,0.994995812518,1,600,600,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,26,Louvain,known_K_assisted,0,8,3,3,0.990445010868,0.994995812518,1,600,600,1,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,26,Louvain (fixed resolution),fixed_resolution_reference,0,8,3,1,0,0,1,600,600,0.25,1,18,0.0722891566265,1,1,0
+degree_sd=1.2; within/between=3,26,Spectral,known_K_assisted,1.2,3,3,3,0.307414514681,0.104107731393,1,600,600,,1,18,0.339117428307,0.35,2.5,0.768011024866
+degree_sd=1.2; within/between=3,26,SCORE,known_K_assisted,1.2,3,3,3,0.589603960559,0.667245041138,1,600,600,,1,18,0.339117428307,0.35,2.5,0.768011024866
+degree_sd=1.2; within/between=3,26,Louvain,known_K_assisted,1.2,3,3,3,0.686783055678,0.764865230468,1,600,600,0.75,1,18,0.339117428307,0.35,2.5,0.768011024866
+degree_sd=1.2; within/between=3,26,Louvain (fixed resolution),fixed_resolution_reference,1.2,3,3,1,0,0,1,600,600,0.25,1,18,0.339117428307,0.35,2.5,0.768011024866
+degree_sd=1.2; within/between=8,26,Spectral,known_K_assisted,1.2,8,3,3,0.321662976107,0.117005817766,1,600,600,,1,18,0.452880028833,0.35,2.5,0.768011024866
+degree_sd=1.2; within/between=8,26,SCORE,known_K_assisted,1.2,8,3,3,0.909340456642,0.945684106521,1,600,600,,1,18,0.452880028833,0.35,2.5,0.768011024866
+degree_sd=1.2; within/between=8,26,Louvain,known_K_assisted,1.2,8,3,3,0.932822085746,0.960281048672,1,600,600,1,1,18,0.452880028833,0.35,2.5,0.768011024866
+degree_sd=1.2; within/between=8,26,Louvain (fixed resolution),fixed_resolution_reference,1.2,8,3,1,0,0,1,600,600,0.25,1,18,0.452880028833,0.35,2.5,0.768011024866
+degree_sd=0; within/between=3,27,Spectral,known_K_assisted,0,3,3,3,0.721031508678,0.791191117515,0.998333333333,600,599,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,27,SCORE,known_K_assisted,0,3,3,3,0.721031508678,0.791191117515,0.998333333333,600,599,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,27,Louvain,known_K_assisted,0,3,3,3,0.789766825433,0.854992606234,0.998333333333,600,599,0.75,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,27,Louvain (fixed resolution),fixed_resolution_reference,0,3,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=8,27,Spectral,known_K_assisted,0,8,3,3,1,1,0.998333333333,600,599,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,27,SCORE,known_K_assisted,0,8,3,3,1,1,0.998333333333,600,599,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,27,Louvain,known_K_assisted,0,8,3,3,1,1,0.998333333333,600,599,1,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,27,Louvain (fixed resolution),fixed_resolution_reference,0,8,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.0722891566265,1,1,0
+degree_sd=1.2; within/between=3,27,Spectral,known_K_assisted,1.2,3,3,3,0.316706862649,0.112387999359,0.998333333333,600,599,,0.998333333333,18,0.33916347104,0.35,2.5,0.796791300627
+degree_sd=1.2; within/between=3,27,SCORE,known_K_assisted,1.2,3,3,3,0.564292702415,0.64220279215,0.998333333333,600,599,,0.998333333333,18,0.33916347104,0.35,2.5,0.796791300627
+degree_sd=1.2; within/between=3,27,Louvain,known_K_assisted,1.2,3,3,3,0.582044547209,0.632711052041,0.998333333333,600,599,0.875,0.998333333333,18,0.33916347104,0.35,2.5,0.796791300627
+degree_sd=1.2; within/between=3,27,Louvain (fixed resolution),fixed_resolution_reference,1.2,3,3,1,0,0,0.998333333333,600,599,0.25,0.998333333333,18,0.33916347104,0.35,2.5,0.796791300627
+degree_sd=1.2; within/between=8,27,Spectral,known_K_assisted,1.2,8,3,3,0.313866828012,0.108782051841,0.998333333333,600,599,,1,18,0.452962148464,0.35,2.5,0.796791300627
+degree_sd=1.2; within/between=8,27,SCORE,known_K_assisted,1.2,8,3,3,0.8689257549,0.916700725418,0.998333333333,600,599,,1,18,0.452962148464,0.35,2.5,0.796791300627
+degree_sd=1.2; within/between=8,27,Louvain,known_K_assisted,1.2,8,3,3,0.917079173702,0.950482869047,0.998333333333,600,599,1,1,18,0.452962148464,0.35,2.5,0.796791300627
+degree_sd=1.2; within/between=8,27,Louvain (fixed resolution),fixed_resolution_reference,1.2,8,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.452962148464,0.35,2.5,0.796791300627
+degree_sd=0; within/between=3,28,Spectral,known_K_assisted,0,3,3,3,0.594524677591,0.671536468781,0.998333333333,600,599,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,28,SCORE,known_K_assisted,0,3,3,3,0.595620852941,0.671888506696,0.998333333333,600,599,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,28,Louvain,known_K_assisted,0,3,3,3,0.10225526524,0.112320038207,0.998333333333,600,599,0.75,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,28,Louvain (fixed resolution),fixed_resolution_reference,0,3,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=8,28,Spectral,known_K_assisted,0,8,3,3,1,1,0.998333333333,600,599,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,28,SCORE,known_K_assisted,0,8,3,3,0.990432870326,0.994991638796,0.998333333333,600,599,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,28,Louvain,known_K_assisted,0,8,3,3,1,1,0.998333333333,600,599,1,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,28,Louvain (fixed resolution),fixed_resolution_reference,0,8,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.0722891566265,1,1,0
+degree_sd=1.2; within/between=3,28,Spectral,known_K_assisted,1.2,3,3,3,0.283991483387,0.0842533564649,0.998333333333,600,599,,1,18,0.339124951588,0.35,2.5,0.772787462606
+degree_sd=1.2; within/between=3,28,SCORE,known_K_assisted,1.2,3,3,3,0.55695603224,0.630902183143,0.998333333333,600,599,,1,18,0.339124951588,0.35,2.5,0.772787462606
+degree_sd=1.2; within/between=3,28,Louvain,known_K_assisted,1.2,3,3,3,0.415445085086,0.384695133227,0.998333333333,600,599,0.75,1,18,0.339124951588,0.35,2.5,0.772787462606
+degree_sd=1.2; within/between=3,28,Louvain (fixed resolution),fixed_resolution_reference,1.2,3,3,1,0,0,0.998333333333,600,599,0.25,1,18,0.339124951588,0.35,2.5,0.772787462606
+degree_sd=1.2; within/between=8,28,Spectral,known_K_assisted,1.2,8,3,3,0.324710030696,0.119012867369,0.998333333333,600,599,,0.998333333333,18,0.452893446489,0.35,2.5,0.772787462606
+degree_sd=1.2; within/between=8,28,SCORE,known_K_assisted,1.2,8,3,3,0.856868446303,0.906710261396,0.998333333333,600,599,,0.998333333333,18,0.452893446489,0.35,2.5,0.772787462606
+degree_sd=1.2; within/between=8,28,Louvain,known_K_assisted,1.2,8,3,3,0.909089661322,0.945453046733,0.998333333333,600,599,1,0.998333333333,18,0.452893446489,0.35,2.5,0.772787462606
+degree_sd=1.2; within/between=8,28,Louvain (fixed resolution),fixed_resolution_reference,1.2,8,3,1,0,0,0.998333333333,600,599,0.25,0.998333333333,18,0.452893446489,0.35,2.5,0.772787462606
+degree_sd=0; within/between=3,29,Spectral,known_K_assisted,0,3,3,3,0.683235270754,0.760734693025,1,600,600,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,29,SCORE,known_K_assisted,0,3,3,3,0.683235270754,0.760734693025,1,600,600,,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,29,Louvain,known_K_assisted,0,3,3,3,0.700110885842,0.76492573764,1,600,600,0.75,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=3,29,Louvain (fixed resolution),fixed_resolution_reference,0,3,3,1,0,0,1,600,600,0.25,1,18,0.0541624874624,1,1,0
+degree_sd=0; within/between=8,29,Spectral,known_K_assisted,0,8,3,3,1,1,1,600,600,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,29,SCORE,known_K_assisted,0,8,3,3,1,1,1,600,600,,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,29,Louvain,known_K_assisted,0,8,3,3,1,1,1,600,600,1,1,18,0.0722891566265,1,1,0
+degree_sd=0; within/between=8,29,Louvain (fixed resolution),fixed_resolution_reference,0,8,3,1,0,0,1,600,600,0.25,1,18,0.0722891566265,1,1,0
+degree_sd=1.2; within/between=3,29,Spectral,known_K_assisted,1.2,3,3,3,0.288725644728,0.0877019209578,1,600,600,,1,18,0.339112298463,0.35,2.5,0.764736921939
+degree_sd=1.2; within/between=3,29,SCORE,known_K_assisted,1.2,3,3,3,0.470987383068,0.542662040818,1,600,600,,1,18,0.339112298463,0.35,2.5,0.764736921939
+degree_sd=1.2; within/between=3,29,Louvain,known_K_assisted,1.2,3,3,3,0.548596606255,0.626840165892,1,600,600,0.75,1,18,0.339112298463,0.35,2.5,0.764736921939
+degree_sd=1.2; within/between=3,29,Louvain (fixed resolution),fixed_resolution_reference,1.2,3,3,1,0,0,1,600,600,0.25,1,18,0.339112298463,0.35,2.5,0.764736921939
+degree_sd=1.2; within/between=8,29,Spectral,known_K_assisted,1.2,8,3,3,0.31405475801,0.109532499501,1,600,600,,1,18,0.452870879949,0.35,2.5,0.764736921939
+degree_sd=1.2; within/between=8,29,SCORE,known_K_assisted,1.2,8,3,3,0.855892338562,0.907003536901,1,600,600,,1,18,0.452870879949,0.35,2.5,0.764736921939
+degree_sd=1.2; within/between=8,29,Louvain,known_K_assisted,1.2,8,3,3,0.940250101911,0.965185510313,1,600,600,1,1,18,0.452870879949,0.35,2.5,0.764736921939
+degree_sd=1.2; within/between=8,29,Louvain (fixed resolution),fixed_resolution_reference,1.2,8,3,1,0,0,1,600,600,0.25,1,18,0.452870879949,0.35,2.5,0.764736921939

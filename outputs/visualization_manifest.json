@@ -1,0 +1,31 @@
+{
+  "core_methods": [
+    "Spectral",
+    "SCORE",
+    "Louvain"
+  ],
+  "population_size": 7431,
+  "edge_count": 27045,
+  "data_source": "LastFM Asia; analysis population, graph-only fitted partitions and liked-artist sets",
+  "source_sha256": "4e55c308d6736a3dc6e64774b7cb24625c5f41361d54826b59684a6bff6fbf8b",
+  "source_file": "code/visualizations.py",
+  "research_questions": [
+    "Community structure from follows",
+    "Within/between music similarity",
+    "Method-choice sensitivity"
+  ],
+  "color_alignment": "Maximum overlap with SCORE using optimal bijective linear assignment; visual relabeling only",
+  "metrics_checked_against": "tab06_main_test.csv",
+  "figure_review_pages": 6,
+  "guide": "tables/tab22_visualization_guide.csv",
+  "guide_sha256": "9ff6bf2ab51173e58a1ae3656d36d0801be0381c06e927aa3d2364db562ba3ec",
+  "artifact_sha256": {
+    "fig11_core_networks.png": "303d68874ca48aa08d7f159349629c36e1d6730409acb292a087d833e9578321",
+    "fig11_core_networks.pdf": "96e05fd1f10da4d8fe1649326db51cc71a8e12db19b86dbe4ae0750a318934f9",
+    "fig12_core_music_heatmaps.png": "928fe94aada37d3d93367e94a3e9c4fa92516ea5ca15fa615f06d1fdce2a321f",
+    "fig12_core_music_heatmaps.pdf": "21a59ac73e4daf90b9b4b73630dc84c89e7e23f695a682ae41035d330f8f6fe4",
+    "fig13_weighting_sensitivity.png": "678fa2a3fa41479f59e35dc2cbc097399fbef5992dfc6f19a3750380b2ce6ebe",
+    "fig13_weighting_sensitivity.pdf": "c37328646114c43d72579073bef856357d869d4d693f7a92f250752cffe00df3",
+    "visualization_review.pdf": "65d1ef4a860f0e272435a78dbaacea596d870b63693ef5fae56135c3e6003c62"
+  }
+}

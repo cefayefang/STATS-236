@@ -1,0 +1,5 @@
+within_between_ratio,metric,contrast,mean,sd,mcse,ci_low,ci_high,replications
+3,NMI,(SCORE minus Spectral) heterogeneous minus homogeneous,0.228130460116,0.0408597929812,0.00745994343693,0.21287316267,0.243387757562,30
+3,ARI,(SCORE minus Spectral) heterogeneous minus homogeneous,0.500996259037,0.042130295193,0.00769190434385,0.485264548268,0.516727969805,30
+8,NMI,(SCORE minus Spectral) heterogeneous minus homogeneous,0.56109342697,0.0252735771061,0.00461430276329,0.55165611818,0.570530735759,30
+8,ARI,(SCORE minus Spectral) heterogeneous minus homogeneous,0.80936325261,0.0202101865181,0.00368985834911,0.801816644939,0.816909860281,30

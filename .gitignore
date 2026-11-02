@@ -3,11 +3,16 @@
 
 # Course materials (instructor's slides; not ours to redistribute)
 Chapter_3__Community_Detection_export/
+Project-Instruction-2026*.pdf
 
 # Python / Jupyter
 __pycache__/
 .ipynb_checkpoints/
 *.pyc
+.venv/
+tmp/
+code/.scratch/
+outputs/execution.checkpoint.ipynb
 
 # Office lock files
 ~$*

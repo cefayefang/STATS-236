@@ -1,5 +1,6 @@
 Method,# communities containing top-1% hubs,% of hubs in communities with < 5% of users,"corr(community size, mean degree)",max mean degree / overall mean degree
 Spectral,10,90.667,-0.091,7.367
 SCORE,10,13.333,-0.427,1.64
-SCORE+,9,16.0,-0.309,1.448
-Louvain,6,0.0,-0.082,1.285
+SCORE+ (paper),3,0,-0.073,1.303
+SCORE+ (truncated),9,16,-0.309,1.448
+Louvain,6,0,-0.082,1.285

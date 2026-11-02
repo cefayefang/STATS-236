@@ -1,14 +1,14 @@
 Choice,Value
 Sample,"LCC of users with music data: n = 7,431, m = 27,045"
-Eigen-decomposition,"scipy.sparse.linalg.eigsh, top 30 eigenpairs by |eigenvalue|"
+Eigen-decomposition,"scipy.sparse.linalg.eigsh, deterministic v0, tol=1e-11; positive entrywise Perron refinement; top 30 by magnitude"
 k-means,"scikit-learn KMeans, 20 random starts, seed 236"
 Number of communities K,K* = 11: largest relative eigengap of L_τ in 3..20; checked with community sizes and edge-subsampling stability (no music data used)
-SCORE truncation,ratios truncated at ±log n (Jin 2015)
-SCORE+ regularization τ,"τ = d̄ = 7.28 (Lec9 slide 28); published default 0.1·d_max = 21.4 re-introduces localization (tab02), reported as robustness"
-SCORE+ threshold t,"t = 0.1 (Jin, Ke & Luo 2021 default)"
+SCORE truncation,SCORE: truncated at +/-log n; truncated SCORE+ extension: clipped; paper comparator: untruncated
+SCORE+ regularization τ,"tau=mean degree=7.28, an explicit modification; published 0.1*dmax=21.4 tested for both SCORE+ variants"
+SCORE+ threshold t,t=0.1; extra-vector rule uses signed eigenvalue ratio as in paper section 3.1
 Louvain,networkx.community.louvain_communities defaults; resolution γ = 0.25 chosen so K ≈ K* (default γ=1 gives K = 28); seed 236
-Similarity,Jaccard index of liked-artist sets
+Similarity,"Jaccard of binary liked-artist sets, float64, zero diagonal and empty-union convention"
 Test statistic,T = mean of within-community means − mean of between-community means
-Permutation strata,5×5 quantile bins of degree × #artists (main); country (confounder check)
-# permutations,"1000 (main and country tests), 200 (robustness)"
-Simulation,"DCBM/SBM with parameters estimated from the real data, 20 replications per setting"
+Permutation strata,tie-preserving quantile bins: degree/activity q5; country only; supplementary joint country/degree/activity q3; q5/q7 sensitivity
+# permutations,1999 for the degree/activity main test; 199 for country checks; 199 for other sensitivities; paired estimands share draws
+Simulation,"Poissonized DCBM and within-block homogeneous SBM, calibrated to real block edge counts, 20 replications per setting"
