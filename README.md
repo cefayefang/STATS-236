@@ -11,8 +11,10 @@ Faye Fang and Grace Chen · Fall 2026
   **[saved outputs and verification](outputs/)**.
 
 The notebook is inside `code/`, rather than at the repository root. This repository
-contains the completed analysis; the separately edited report manuscript and its
-dedicated figure-building scripts are not included in this update.
+includes the completed analysis and the report-building and verification scripts
+under `code/scripts/`. The `report/` folder containing the separately edited
+manuscript and report assets is excluded from this update; those local files are
+needed to compile or verify the report.
 
 ## Project overview
 
