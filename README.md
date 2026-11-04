@@ -2,6 +2,20 @@
 
 Faye Fang and Grace Chen · Fall 2026
 
+## Open the analysis
+
+- **[Executed analysis notebook](code/STAT236_LastFM_Community_Music.ipynb)**:
+  methods, statistical comparisons, figures and saved cell outputs.
+- **[All analysis code](code/)**: Python modules, tests, runners and dependencies.
+- **[Statistical tables](tables/)**, **[analysis figures](figures/)** and
+  **[saved outputs and verification](outputs/)**.
+
+The notebook is inside `code/`, rather than at the repository root. This repository
+contains the completed analysis; the separately edited report manuscript and its
+dedicated figure-building scripts are not included in this update.
+
+## Project overview
+
 **Project type:** Application of existing community detection methods to real data,
 with a comparison of how method choice affects the conclusions.
 **Timeline 1:** Topic due October 5; report and webpage due November 8.
