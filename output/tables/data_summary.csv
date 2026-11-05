@@ -1,0 +1,18 @@
+Quantity,Value
+Users (raw),7624
+Edges (raw),27806
+Self-loops,0
+Duplicate edges,0
+Users without music data,173
+Components after removing them,18
+Users in final sample,7431
+Edges in final sample,27045
+Artists in final sample,7842
+Mean degree,7.27896649172
+Median degree,4
+Max degree,214
+Mean artists per user,404.393493652
+Median artists per user,408
+Min users per artist,97
+Countries,18
+Spearman correlation of degree and artists,0.245850725535

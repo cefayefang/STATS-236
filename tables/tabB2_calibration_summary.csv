@@ -1,3 +1,0 @@
-scheme,repetitions,inner_permutations,alpha,rejection_count,rejection_fraction,mc_ci_low,mc_ci_high
-unrestricted_ignores_country,200,199,0.05,200,1,0.981724659645,1
-country_restricted_correct_null,200,199,0.05,11,0.055,0.027772254552,0.0962776444339

@@ -5,14 +5,16 @@
 Chapter_3__Community_Detection_export/
 Project-Instruction-2026*.pdf
 
+# Report drafts and internal notes (not part of the code repo)
+236_report/
+STAT 236 项目逻辑全解.pdf
+
 # Python / Jupyter
 __pycache__/
 .ipynb_checkpoints/
 *.pyc
 .venv/
 tmp/
-code/.scratch/
-outputs/execution.checkpoint.ipynb
 
 # Office lock files
 ~$*

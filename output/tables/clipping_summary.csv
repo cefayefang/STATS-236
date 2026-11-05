@@ -1,0 +1,4 @@
+Embedding,Vectors in ratio,Share above log n,Largest absolute ratio
+SCORE on A,10,0.393231059077,62632.9733534
+Unweighted ratios on L_tau,10,0.0806890055174,925.690898242
+SCORE+ on L_tau,11,0.0723382390722,1096.21386096

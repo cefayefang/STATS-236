@@ -1,0 +1,6 @@
+Method,Share of top 1% degree users in communities below 5% of users,Largest community share,Smallest community,Largest community
+Spectral,0.906666666667,0.919122594536,35,6830
+SCORE,0.133333333333,0.18718880366,263,1391
+SCORE+,0.16,0.254609070112,138,1892
+Louvain,0,0.237653074956,13,1766
+SCORE+ (no clipping),0,0.62589153546,6,4651
