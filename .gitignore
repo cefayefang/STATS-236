@@ -7,6 +7,11 @@ Project-Instruction-2026*.pdf
 
 # Report drafts and internal notes (not part of the code repo)
 236_report/
+
+# Local manuscripts and side project: keep out of all GitHub syncs
+/report/
+/236_report_updated/
+/planet-nine/
 STAT 236 项目逻辑全解.pdf
 
 # Python / Jupyter
