@@ -213,14 +213,15 @@ input[type="range"]::-moz-range-thumb {
 input[type="range"]:focus, input[type="range"]:focus-visible { outline: none; }
 
 .guess-num { font-weight: 600; font-size: clamp(56px, 8vw, 84px); letter-spacing: -0.045em; font-variant-numeric: tabular-nums; line-height: 1; }
-.scale { position: relative; height: 118px; margin: 8px 8px 0; }
-.scale-line { position: absolute; left: 0; right: 0; top: 46px; height: 2px; background: var(--line); border-radius: 2px; }
-.tick { position: absolute; top: 42px; width: 1px; height: 10px; background: var(--line); }
-.tick span { position: absolute; top: 16px; left: 50%; transform: translateX(-50%); font-size: 11px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
-.mark { position: absolute; top: 38px; width: 12px; height: 12px; border-radius: 50%; transform: translateX(-6px) scale(0); border: 2px solid #fff; box-shadow: 0 1px 4px rgba(0,0,0,.2); transition: transform .5s cubic-bezier(.2,.8,.2,1); }
+.scale { position: relative; height: 146px; margin: 8px 16px 0; }
+.scale-line { position: absolute; left: 0; right: 0; top: 72px; height: 2px; background: var(--line); border-radius: 2px; }
+.tick { position: absolute; top: 68px; width: 1px; height: 10px; background: var(--line); }
+.tick span { position: absolute; top: 12px; left: 50%; transform: translateX(-50%); font-size: 11px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.mark { position: absolute; top: 66px; width: 12px; height: 12px; border-radius: 50%; transform: translateX(-6px) scale(0); border: 2px solid #fff; box-shadow: 0 1px 4px rgba(0,0,0,.2); transition: transform .5s cubic-bezier(.2,.8,.2,1); }
 .mark.show { transform: translateX(-6px) scale(1); }
-.mark em { position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%); font-style: normal; font-size: 11px; font-weight: 600; white-space: nowrap; }
-.mark.you { top: 40px; width: 2px; height: 22px; border-radius: 2px; border: 0; box-shadow: none; background: var(--blue); transform: translateX(-1px) scale(1); }
+.mark em { position: absolute; left: 50%; transform: translateX(-50%); font-style: normal; font-size: 11px; font-weight: 600; line-height: 1.25; text-align: center; }
+.mark em b { display: block; font-weight: 600; }
+.mark.you { top: 62px; width: 2px; height: 22px; border-radius: 2px; border: 0; box-shadow: none; background: var(--blue); transform: translateX(-1px) scale(1); }
 .answer { font-size: 19px; letter-spacing: -0.02em; }
 
 .chart { display: block; width: 100%; height: auto; }
@@ -270,6 +271,7 @@ input[type="range"]:focus, input[type="range"]:focus-visible { outline: none; }
 .step-n { font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); }
 .step-card h3 { font-weight: 600; font-size: 22px; letter-spacing: -0.025em; line-height: 1.2; margin: 8px 0 10px; }
 .step-card p { font-size: 15px; line-height: 1.45; color: #3a3a3c; margin: 0; max-width: none; }
+.step-card p + p { margin-top: 10px; }
 .pulse { animation: soft-pulse 1.2s ease-out 2; border-radius: 16px; }
 @keyframes soft-pulse {
   0% { box-shadow: 0 0 0 0 #0071e355; }
@@ -293,6 +295,23 @@ input[type="range"]:focus, input[type="range"]:focus-visible { outline: none; }
 
 .frame { display: grid; gap: 10px; }
 .frame canvas { width: 100%; height: auto; aspect-ratio: 720 / 420; display: block; border-radius: 24px; background: #141416; }
+.shot {
+  background: #f6f1ea;
+  border-radius: 24px;
+  padding: 28px 28px 22px;
+}
+.shot[hidden] { display: none; }
+.shot-kicker { font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: #6e6e73; margin: 0 0 10px; }
+.shot-link { font-size: clamp(26px, 3vw, 36px); font-weight: 600; letter-spacing: -0.03em; line-height: 1.15; color: #1d1d1f; }
+.shot p, .shot figcaption { margin: 14px 0 0; color: #3a3a3c; max-width: 42rem; }
+.shot figcaption { color: #6e6e73; font-size: 14px; }
+.shot-frame { width: 100%; overflow: hidden; border-radius: 12px; background: #fff; }
+.shot-frame img { width: 100%; height: auto; display: block; }
+.process { width: 100%; border-collapse: collapse; font-size: 15px; margin-top: 8px; }
+.process th, .process td { text-align: left; padding: 12px 14px 12px 0; border-top: 1px solid #e4ddd4; vertical-align: top; }
+.process th { font-size: 12px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: #6e6e73; border-top: 0; }
+.process td:not(:first-child), .process th:not(:first-child) { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.process td:first-child { padding-right: 18px; }
 .frame-note { color: var(--ink-2); max-width: 46rem; font-size: 15px; }
 .q-panel {
   background: #f6f1ea; border-radius: 28px; min-height: 340px;
@@ -300,6 +319,7 @@ input[type="range"]:focus, input[type="range"]:focus-visible { outline: none; }
 }
 .q-kicker { font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: #6e6e73; margin: 0; }
 .q-line { font-size: clamp(26px, 3vw, 40px); font-weight: 600; letter-spacing: -0.03em; line-height: 1.2; color: #1d1d1f; margin: 0; max-width: 16em; }
+.term { font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif; font-style: italic; font-weight: 500; letter-spacing: 0; }
 
 .rail {
   position: fixed; left: 18px; top: 50%; transform: translateY(-50%); z-index: 40;
@@ -316,7 +336,13 @@ input[type="range"]:focus, input[type="range"]:focus-visible { outline: none; }
   font-size: 13px; font-weight: 600; min-height: 16px;
 }
 .rail-list span { max-width: 0; opacity: 0; overflow: hidden; white-space: nowrap; transition: max-width .2s ease, opacity .2s ease; }
-.rail.is-open .rail-list span { max-width: 150px; opacity: 1; }
+.rail.is-open .rail-list span { max-width: 180px; opacity: 1; }
+.rail-label { display: none; }
+.rail.is-open .rail-label {
+  display: block; margin: 8px 0 0; padding-left: 24px;
+  font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: #6e6e73;
+}
+.rail.is-open .rail-sub a { padding-left: 10px; }
 .rail-list a i { width: 14px; height: 2px; border-radius: 1px; background: #c8c8cc; flex: none; }
 .rail-list a.is-here i { width: 26px; background: #1d1d1f; }
 .rail.is-open .rail-list a:hover span { color: #1d1d1f; }

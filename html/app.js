@@ -15,10 +15,10 @@ function svgEl(name, attrs = {}, text) {
 }
 
 const STATION_TEXT = {
-  'Spectral': 'Spectral clustering does not correct for popularity. Nearly everyone lands in one giant group, and ten small groups form around popular users.',
-  'SCORE': 'SCORE divides out popularity with a ratio. The groups become far more even, and the map shows clear regions.',
-  'SCORE+': 'SCORE+ first scales down the links of popular users, then uses ratios too. It also finds fairly even groups, but not the same ones as SCORE.',
-  'Louvain': 'Louvain uses no eigenvectors. It moves people between groups to get more links inside each one. Its groups are the closest match to country.'
+  'Spectral': 'We take the 11 leading eigenvectors of the mutual-follow adjacency matrix and cluster users by Euclidean distance. Degree is left unadjusted. The largest circle contains 6,830 of the 7,431 users.',
+  'SCORE': 'Each user is placed by the ratios of eigenvectors 2 through 11 to the leading eigenvector. Ratios beyond ±log n = ±8.91 are clipped, and that bound applies to 39.3% of the coordinates.',
+  'SCORE+': 'Follows that touch high-degree users are first downweighted with regularization τ = 7.28, the mean degree. We then keep 12 eigenvectors, form ratios as in SCORE, and clip 7.2% of them.',
+  'Louvain': 'Users are moved to raise modularity at resolution γ = 0.25. Across seeds 236 to 240, this resolution has the median circle count closest to 11. The partition shown uses seed 236.'
 };
 
 /* ------------ station state ------------ */
@@ -171,24 +171,24 @@ $('guess').addEventListener('input', updateGuess); updateGuess();
 $('lock').addEventListener('click', () => {
   const v = +$('guess').value;
   const place = [
-    { up: true, x: '-70%' },
-    { up: false, x: '-10%' },
-    { up: true, x: '10%' },
-    { up: false, x: '-20%' }
+    { bottom: '34px', top: 'auto', x: '-50%' },
+    { top: '32px', bottom: 'auto', x: '-100%' },
+    { bottom: '14px', top: 'auto', x: '-50%' },
+    { top: '32px', bottom: 'auto', x: '0%' }
   ];
   marks.forEach((el, i) => {
     el.classList.add('show');
     const up = 100 * (D.blocks[METHODS[i]].ratio - 1);
-    el.innerHTML = `<em>${METHODS[i]} +${up.toFixed(0)}%</em>`;
+    el.innerHTML = `<em><b>${METHODS[i]}</b>+${up.toFixed(0)}%</em>`;
     const em = el.querySelector('em');
-    em.style.color = '#f5f5f7';
+    em.style.color = COLOR[METHODS[i]];
+    em.style.top = place[i].top;
+    em.style.bottom = place[i].bottom;
     em.style.transform = 'translateX(' + place[i].x + ')';
-    if (place[i].up) { em.style.bottom = '18px'; em.style.top = 'auto'; }
-    else { em.style.top = '22px'; em.style.bottom = 'auto'; }
   });
   const a = $('answer'); a.hidden = false;
-  a.innerHTML = `You guessed <strong>+${v}%</strong>. The three methods with even groups give <strong>+25% to +36%</strong>, and Spectral gives <strong>+54%</strong>. This is the Jaccard index, so it does not mean people share that many more artists.`;
-  $('lock').textContent = 'Guess locked in';
+  a.innerHTML = `You guessed <strong>+${v}%</strong>. SCORE, SCORE+, and Louvain fall between <strong>+25% and +36%</strong>. Spectral is <strong>+54%</strong>. Each mark says how much higher the inside average is than the outside average.`;
+  $('lock').textContent = 'Answers shown';
 });
 
 /* ------------ equalizer ------------ */
@@ -234,7 +234,7 @@ function renderEq(m) {
   };
   requestAnimationFrame(step);
   const above = B.within.filter((v, k) => v > target[11 + k]).length;
-  const extra = { 'Spectral': ' The tall bars are tiny groups around popular users. The first bar holds 6,830 people, and it sits below its mark. That big group is why Spectral flips in Track 4.', 'SCORE': '', 'SCORE+': '', 'Louvain': '' }[m];
+  const extra = { 'Spectral': ' The tall bars are tiny groups around popular users. The first bar holds 6,830 people, and it sits below its mark.', 'SCORE': '', 'SCORE+': '', 'Louvain': '' }[m];
   $('eqNote').innerHTML = `On <strong>${m}</strong>, <strong>${above} of 11</strong> communities sit above their mark. Mean similarity is <strong>${B.S_same.toFixed(3)}</strong> inside communities and <strong>${B.S_diff.toFixed(3)}</strong> between them, a ratio of <strong>${B.ratio.toFixed(2)}</strong>.${extra}`;
 }
 listeners.push(renderEq);
@@ -446,7 +446,8 @@ function mountScrolly(root, startNow) {
     }
     if (d.sketch !== undefined) setSketch(+d.sketch);
     if (d.q !== undefined) setQuestion(+d.q);
-    if (d.clean !== undefined) setClean(+d.clean);
+    if (d.clean !== undefined && typeof setClean === 'function') setClean(+d.clean);
+    if (d.shot !== undefined) setShot(+d.shot);
     if (d.pulse) pulse(document.querySelector(d.pulse));
   }
   const at = matchMedia('(max-width: 820px)').matches ? 70 : 46;
@@ -509,9 +510,9 @@ for (let i = 0; i < sketchDots.length; i++) {
   }
 }
 const sketchLines = [
-  'Two people who like the same music often follow each other. That is the familiar part.',
-  'Now only the follows are drawn. Playlists are still closed.',
-  'The amber cluster is a circle. It was drawn from the follows, before anyone opened a playlist.'
+  'Only people so far. No follows yet.',
+  'Each line is two people who follow each other.',
+  'The amber group is one circle, marked from the follows.'
 ];
 function setSketch(phase) {
   const cvs = $('sketch'); if (!cvs) return;
@@ -607,6 +608,11 @@ if (cleanCvs) new ResizeObserver(() => setClean(+(document.querySelector('.step.
 const QUESTIONS = [
   ['Research question', 'Are users in the same social circle more similar in their music preferences, on average, than users in different circles?']
 ];
+function setShot(i) {
+  document.querySelectorAll('#dataStage .shot').forEach(el => {
+    el.hidden = el.dataset.shotPanel !== String(i);
+  });
+}
 function setQuestion(i) {
   const p = $('qpanel'); if (!p) return;
   const q = QUESTIONS[i] || QUESTIONS[0];

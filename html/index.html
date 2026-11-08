@@ -13,7 +13,7 @@
   <div class="byline"><span>Faye Fang and Grace Chen</span><span>STAT 236, Fall 2026</span></div>
   <div class="head">
     <h1 id="title">Do Social Circles Share Music Taste?</h1>
-    <p class="lede">Two people who like the same artists are more likely to follow each other. A whole circle is a harder question. On LastFM Asia we draw the circles from follows alone, then look at the music. Spectral clustering, SCORE, SCORE+, and Louvain each draw those circles differently, and the page is a way to see what that changes.</p>
+    <p class="lede">People who like the same music often end up following each other. That is easy to picture for two friends. This page asks the harder version. Once a whole circle has been drawn from follows alone, do the people inside it share more music than people in different circles? The sections below set up that question, show the data, and then walk through the comparison.</p>
   </div>
 </section>
 
@@ -26,20 +26,20 @@
     <div class="scrolly-steps">
       <article class="step" data-sketch="0">
         <div class="step-card">
-          <h3>Two friends, one taste</h3>
-          <p>If you and a friend like the same artists, you are more likely to follow each other. That story is easy. It is about two people.</p>
+          <h3>Start with two people</h3>
+          <p>Two people who like the same artists are more likely to follow each other. That is one friendship. The picture on the right is only people. There are no lines yet.</p>
         </div>
       </article>
       <article class="step" data-sketch="1">
         <div class="step-card">
-          <h3>Just the follows</h3>
-          <p>A line means two people follow each other. We have not looked at their playlists. The map is only who is connected to whom.</p>
+          <h3>Add the follows</h3>
+          <p>A line joins two people who follow each other. Their music is not used here. Every circle later in the page is drawn from these lines.</p>
         </div>
       </article>
       <article class="step" data-sketch="2">
         <div class="step-card">
-          <h3>Then a circle appears</h3>
-          <p>Some people sit in a cluster. That cluster is a circle, and it was drawn without their music. The music comes after, as a question, not as an ingredient.</p>
+          <h3>Mark one circle</h3>
+          <p>The amber group is one circle. We marked it from the follows. Next we ask whether the people in that circle also share music.</p>
         </div>
       </article>
     </div>
@@ -55,9 +55,9 @@
     <div class="scrolly-steps">
       <article class="step" data-q="0">
         <div class="step-card">
-          <div class="step-n">Research question</div>
-          <h3>The only question</h3>
-          <p>Everything after this card is an attempt to answer it. The circles are already fixed before any playlist is opened.</p>
+          <div class="step-n">How to read it</div>
+          <h3>Look at the sentence on the right</h3>
+          <p><span class="term">Circle</span> means a group built from follows. <span class="term">Similar</span> means shared artists. The sentence asks whether the inside is higher on average. It does not ask whether every person matches their neighbors.</p>
         </div>
       </article>
     </div>
@@ -72,76 +72,95 @@
   </div>
   <div class="scrolly" data-scrolly>
     <div class="scrolly-steps">
-      <article class="step" data-clean="0">
+      <article class="step" data-shot="0">
         <div class="step-card">
-          <div class="step-n">The snapshot</div>
-          <h3>7,624 users</h3>
-          <p>A public snapshot. Each user has liked artists and an anonymized country. A tie is a mutual follow. The published network has 27,806 edges.</p>
+          <div class="step-n">The file</div>
+          <h3>Open the public snapshot</h3>
+          <p>The link on the right is the public file we started from. Read the note under it. It says what the snapshot contains, and why those records match the question.</p>
         </div>
       </article>
-      <article class="step" data-clean="1">
+      <article class="step" data-shot="1">
         <div class="step-card">
-          <div class="step-n">Empty lists</div>
-          <h3>173 users leave</h3>
-          <p>A user with no artists cannot be compared. Dropping them leaves 7,451 users and 27,048 edges.</p>
+          <div class="step-n">Data exploration</div>
+          <h3>Read the three panels</h3>
+          <p>Panel (a) is the number of mutual follows. Most users have only a few. The median is 4, and the highest is 214. Only 0.098% of possible pairs are tied.</p>
+          <p>Panel (b) is the length of the artist list. The median is 408. A like means the user marked that artist. It is not a count of plays. Users with more follows tend to list more artists. The Spearman correlation is 0.246.</p>
+          <p>Panel (c) is country size, largest first. The three largest countries hold 51.9% of the users. Each artist in this figure is liked by at least 97 users.</p>
         </div>
       </article>
-      <article class="step" data-clean="2">
+      <article class="step" data-shot="2">
         <div class="step-card">
-          <div class="step-n">One component</div>
-          <h3>The sample we analyze</h3>
-          <p>SCORE needs a strictly positive leading eigenvector, so 20 users outside the largest connected component are dropped. 7,431 users, 27,045 edges, 7,842 artists, 18 countries.</p>
-        </div>
-      </article>
-      <article class="step" data-clean="3">
-        <div class="step-card">
-          <div class="step-n">What a user looks like</div>
-          <h3>A few people have many follows</h3>
-          <p>The median user has 4 follows. The most has 214. Only 0.098% of possible pairs are tied. Follows and list length move together, Spearman 0.246. A like is a mark, not how often someone listens.</p>
+          <div class="step-n">Data processing</div>
+          <h3>Then we keep the users we can compare</h3>
+          <p>A user with an empty artist list has no music to compare, so we drop 173 users. That leaves 7,451 users and 27,048 edges.</p>
+          <p>SCORE needs the leading eigenvector to be strictly positive, so we keep the largest connected component and drop 20 more users. The figure describes this sample: 7,431 users, 27,045 edges, 7,842 artists, and 18 countries.</p>
         </div>
       </article>
     </div>
-    <div class="scrolly-graphic frame">
-      <canvas id="cleanCanvas" width="720" height="420" role="img" aria-label="How the LastFM Asia sample is formed."></canvas>
-      <p class="frame-note" id="cleanNote"></p>
+    <div class="scrolly-graphic frame" id="dataStage">
+      <div class="shot" data-shot-panel="0">
+        <p class="shot-kicker">Dataset</p>
+        <a class="shot-link" href="https://snap.stanford.edu/data/feather-lastfm-social.html">LastFM Asia social network, SNAP</a>
+        <p>Rozemberczki and Sarkar, 2020. A March 2020 snapshot from the public API. Each user has mutual follows, a list of liked artists, and an anonymized country. If two users follow each other, that pair is a tie. The published file has 7,624 users and 27,806 mutual follows.</p>
+        <p>The same users carry both records, so the file matches the question. Follows can draw the circles. Artist lists can compare the music afterward. Country stays out of the grouping and is kept for a separate check.</p>
+      </div>
+      <figure class="shot" data-shot-panel="1" hidden>
+        <div class="shot-frame">
+          <img src="figures/data_summary.png" alt="Three panels: degree distribution, liked artists per user, and country size.">
+        </div>
+        <figcaption>(a) How many users have at least this many follows. (b) Artists per user. The dashed line is the median, 408. (c) Users per country, largest first.</figcaption>
+      </figure>
+      <div class="shot" data-shot-panel="2" hidden>
+        <p class="shot-kicker">Data processing</p>
+        <table class="process">
+          <thead>
+            <tr><th>Step</th><th>Users</th><th>Edges</th><th>Artists</th><th>Countries</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Published file</td><td>7,624</td><td>27,806</td><td>—</td><td>—</td></tr>
+            <tr><td>Drop 173 users with an empty artist list</td><td>7,451</td><td>27,048</td><td>—</td><td>—</td></tr>
+            <tr><td>Drop 20 users outside the largest connected component</td><td>7,431</td><td>27,045</td><td>7,842</td><td>18</td></tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="unit" id="circles" aria-labelledby="circles-title">
   <div class="head">
-    <div class="track">Groupings</div>
-    <h2 id="circles-title">The same people, four rules</h2>
+    <div class="track">Methodology</div>
+    <h2 id="circles-title">Four ways to draw the circles</h2>
   </div>
-  <p>Each dot is one of the 7,431 users. The position comes from the follows. Press a station, or use the previous and next buttons. The dots stay put. Only the colors change, because each rule puts the same people into different circles.</p>
+  <p>The question is already fixed. These four methods are how we study it. Each one uses only the follow network, and each one returns 11 circles. The dots are the same 7,431 people. Press a station, or use the previous and next buttons. The people stay put. The colors change.</p>
   <div class="scrolly" data-scrolly>
     <div class="scrolly-steps">
       <article class="step" data-station="Spectral">
         <div class="step-card">
-          <div class="step-n">Station 1 · Spectral</div>
-          <h3>No correction for popularity</h3>
-          <p>The dial moves to Spectral. Nearly everyone lands in one giant group, and ten small groups form around popular users.</p>
+          <div class="step-n">Method 1</div>
+          <h3>Spectral</h3>
+          <p>Spectral reads the mutual follows directly and does not adjust for who is popular. On this network almost everyone lands in one circle. Ten small circles gather many of the most-followed users.</p>
         </div>
       </article>
       <article class="step" data-station="SCORE">
         <div class="step-card">
-          <div class="step-n">Station 2 · SCORE</div>
-          <h3>Divide out popularity</h3>
-          <p>The same people, recolored. SCORE uses a ratio, so the groups become far more even and the map shows clear regions.</p>
+          <div class="step-n">Method 2</div>
+          <h3>SCORE</h3>
+          <p>SCORE divides later coordinates by a popularity factor, so two people in the same circle are not pushed apart just because one has more follows. The circles become more even.</p>
         </div>
       </article>
       <article class="step" data-station="SCORE+">
         <div class="step-card">
-          <div class="step-n">Station 3 · SCORE+</div>
-          <h3>Turn popular links down first</h3>
-          <p>SCORE+ first scales down the links of popular users, then uses ratios too. The groups are fairly even, and they are not the same groups as SCORE.</p>
+          <div class="step-n">Method 3</div>
+          <h3>SCORE+</h3>
+          <p>SCORE+ first gives less weight to follows that touch very popular users, then uses the same kind of ratio as SCORE. The circles are fairly even, and they are not the same circles.</p>
         </div>
       </article>
       <article class="step" data-station="Louvain">
         <div class="step-card">
-          <div class="step-n">Station 4 · Louvain</div>
-          <h3>No eigenvectors</h3>
-          <p>Louvain moves people between groups to get more links inside each one. Its groups are the closest match to country.</p>
+          <div class="step-n">Method 4</div>
+          <h3>Louvain</h3>
+          <p>Louvain does not use those coordinates. It moves people so that more follows sit inside circles than popularity alone would produce. Its circles line up most closely with country.</p>
         </div>
       </article>
     </div>
@@ -175,39 +194,40 @@
 
 <section class="unit" id="gap" aria-labelledby="t1">
   <div class="head">
-    <div class="track">Track 1 · Your guess</div>
-    <h2 id="t1">How much more alike is a community?</h2>
+    <div class="track">Results · Higher inside</div>
+    <h2 id="t1">Higher similarity inside a circle</h2>
+    <p>Make a guess on the right, then press the button to see the four methods. The percentage is how much higher music similarity is inside a circle than between circles.</p>
   </div>
   <div class="scrolly" data-scrolly>
     <div class="scrolly-steps">
       <article class="step">
         <div class="step-card">
-          <div class="step-n">Before you guess</div>
-          <h3>Friends are already alike</h3>
-          <p>Two users who follow each other have a music similarity of 0.149. Two random users have 0.063. Many people placed in one community never connected.</p>
+          <div class="step-n">Step 1 · A starting point</div>
+          <h3>Friends already share more</h3>
+          <p>Two people who follow each other score 0.149. Two random people score 0.063. A circle is larger than that. It includes people who never followed each other. The slider is about the whole circle.</p>
         </div>
       </article>
       <article class="step">
         <div class="step-card">
-          <div class="step-n">The slider</div>
-          <h3>Drag your guess</h3>
-          <p>The question is the community itself. How much higher is similarity inside a community than between communities? The blue mark is your guess.</p>
+          <div class="step-n">Step 2 · Your guess</div>
+          <h3>Drag the slider</h3>
+          <p>+10% means you think the inside is 10% more similar than the outside. +0% means the two averages match. The four answers stay hidden until you press the button.</p>
         </div>
       </article>
       <article class="step">
         <div class="step-card">
-          <div class="step-n">Lock it in</div>
-          <h3>Four answers appear</h3>
-          <p>Press the blue button. One mark lands for each method. A ratio of 1.36 means the inside average is 36% higher. It does not mean people share 36% more artists.</p>
+          <div class="step-n">Step 3 · The answers</div>
+          <h3>Press the orange button</h3>
+          <p>One mark appears for each method. +36% means the inside average is 36% higher than the outside average. The score is Jaccard: shared artists divided by the artists either person likes.</p>
         </div>
       </article>
     </div>
     <div class="scrolly-graphic deck">
       <div class="controls" style="justify-content:space-between">
         <div class="guess-num" id="guessNum">+10%</div>
-        <button class="btn" id="lock" type="button">Lock in my guess</button>
+        <button class="btn" id="lock" type="button">Show the four answers</button>
       </div>
-      <label class="ctl-label" for="guess">Drag to guess</label>
+      <label class="ctl-label" for="guess">How much higher is the inside than the outside?</label>
       <input type="range" id="guess" min="0" max="100" value="10">
       <div class="scale" id="scale"></div>
       <p class="answer" id="answer" hidden></p>
@@ -217,38 +237,38 @@
 
 <section class="unit" id="equalizer" aria-labelledby="t2">
   <div class="head">
-    <div class="track">Track 2 · Equalizer</div>
-    <h2 id="t2">Each bar is one community</h2>
-    <p>Bar height shows how similar people are inside that community. The white mark shows how similar they are to everyone in other communities. A bar above its mark means the group is a music circle.</p>
+    <div class="track">Results · Equalizer</div>
+    <h2 id="t2">Equalizer</h2>
+    <p>Each bar is one circle, largest first. The height is the average music similarity inside that circle. The white mark is the average similarity between that circle and the others. A bar above its mark means the inside is higher.</p>
   </div>
   <div class="scrolly" data-scrolly>
     <div class="scrolly-steps">
       <article class="step" data-station="Spectral">
         <div class="step-card">
-          <div class="step-n">Equalizer · Spectral</div>
-          <h3>The tall bars are the small groups</h3>
-          <p>Watch the bars restack. The tall ones are tiny groups around popular users. The first bar holds 6,830 people, and it sits below its mark.</p>
+          <div class="step-n">Spectral</div>
+          <h3>Start with the first bar</h3>
+          <p>The first bar is the largest circle, 6,830 people. It sits below the white mark. The tall bars are the small circles.</p>
         </div>
       </article>
       <article class="step" data-station="SCORE">
         <div class="step-card">
-          <div class="step-n">Equalizer · SCORE</div>
-          <h3>More bars clear the mark</h3>
-          <p>The station pill switches to SCORE. Compare each bar with the white mark on that same bar.</p>
+          <div class="step-n">SCORE</div>
+          <h3>Compare each bar with its mark</h3>
+          <p>The bars switch to SCORE. Look at the white mark on each bar. The line under the chart says how many of the 11 bars sit above it.</p>
         </div>
       </article>
       <article class="step" data-station="SCORE+">
         <div class="step-card">
-          <div class="step-n">Equalizer · SCORE+</div>
-          <h3>Not the same eleven groups</h3>
-          <p>SCORE+ uses another grouping, so the eleven bars are eleven different communities. The sentence under the screen gives the inside and between means.</p>
+          <div class="step-n">SCORE+</div>
+          <h3>Another set of 11 circles</h3>
+          <p>SCORE+ draws a different set of circles, so the bars change. Read each bar against its own white mark. The line under the chart gives the inside average and the between average.</p>
         </div>
       </article>
       <article class="step" data-station="Louvain">
         <div class="step-card">
-          <div class="step-n">Equalizer · Louvain</div>
-          <h3>Same reading, another rule</h3>
-          <p>Louvain did not use the coordinates above. The bars still answer the same question: is the inside of this group more alike than the outside?</p>
+          <div class="step-n">Louvain</div>
+          <h3>Same reading for these circles</h3>
+          <p>The bars are now Louvain’s circles. A bar above its white mark means people inside that circle are more similar than people outside it.</p>
         </div>
       </article>
     </div>
@@ -262,8 +282,8 @@
 
 <section class="unit" id="shuffle" aria-labelledby="t3">
   <div class="head">
-    <div class="track">Track 3 · Shuffle</div>
-    <h2 id="t3">Could this happen by luck?</h2>
+    <div class="track">Results · Shuffle check</div>
+    <h2 id="t3">A check for chance and country</h2>
     <p>Press shuffle to swap people's whole playlists, while the communities stay fixed. Each press adds one result to the pile. If communities and music had nothing to do with each other, the real value (blue line) would sit inside the pile. These are the real shuffles from our analysis.</p>
   </div>
   <div class="scrolly" data-scrolly>
@@ -307,8 +327,8 @@
 
 <section class="unit" id="weight" aria-labelledby="t4">
   <div class="head">
-    <div class="track">Track 4 · Crossfader</div>
-    <h2 id="t4">Slide the fader and watch one method flip</h2>
+    <div class="track">Results · Two averages</div>
+    <h2 id="t4">Two ways to average</h2>
     <p>There are two fair ways to average. Give every community the same say, or give every pair of users the same say. Slide between them.</p>
   </div>
   <div class="scrolly" data-scrolly>
@@ -352,8 +372,8 @@
 
 <section class="unit" id="popular" aria-labelledby="t5">
   <div class="head">
-    <div class="track">Track 5 · Why methods disagree</div>
-    <h2 id="t5">Popularity pulls people apart</h2>
+    <div class="track">Results · Popular users</div>
+    <h2 id="t5">Popularity can move users apart</h2>
     <p>Spectral gives each user coordinates. A popular user gets longer coordinates, even in the same community. SCORE divides by the first coordinate, so the popularity cancels. Drag the slider to make Bea more popular. This is a small made-up example.</p>
   </div>
   <div class="scrolly" data-scrolly>
@@ -395,8 +415,8 @@
 
 <section class="unit" id="notes" aria-labelledby="t6">
   <div class="head">
-    <div class="track">Liner notes</div>
-    <h2 id="t6">What we can and cannot say</h2>
+    <div class="track">Conclusion</div>
+    <h2 id="t6">Findings and limits</h2>
   </div>
   <div class="notes">
     <div><h3>What we found</h3><ul>
@@ -433,13 +453,15 @@
     <li><a href="#background"><i></i><span>Background</span></a></li>
     <li><a href="#question"><i></i><span>Question</span></a></li>
     <li><a href="#data"><i></i><span>Data</span></a></li>
-    <li><a href="#circles"><i></i><span>Four rules</span></a></li>
-    <li><a href="#gap"><i></i><span>The gap</span></a></li>
-    <li><a href="#equalizer"><i></i><span>Equalizer</span></a></li>
-    <li><a href="#shuffle"><i></i><span>Shuffle</span></a></li>
-    <li><a href="#weight"><i></i><span>Who counts</span></a></li>
-    <li><a href="#popular"><i></i><span>Popularity</span></a></li>
-    <li><a href="#notes"><i></i><span>What we can say</span></a></li>
+    <li><a href="#circles"><i></i><span>Methodology</span></a></li>
+    <li class="rail-label"><span>Results</span></li>
+    <li class="rail-sub"><a href="#gap"><i></i><span>Higher inside</span></a></li>
+    <li class="rail-sub"><a href="#equalizer"><i></i><span>Equalizer</span></a></li>
+    <li class="rail-sub"><a href="#shuffle"><i></i><span>Shuffle check</span></a></li>
+    <li class="rail-sub"><a href="#weight"><i></i><span>Two averages</span></a></li>
+    <li class="rail-sub"><a href="#popular"><i></i><span>Popular users</span></a></li>
+    <li class="rail-label"><span>Conclusion</span></li>
+    <li class="rail-sub"><a href="#notes"><i></i><span>Findings and limits</span></a></li>
   </ol>
 </nav>
 <script src="data.js"></script>
