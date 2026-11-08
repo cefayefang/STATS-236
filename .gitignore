@@ -21,5 +21,9 @@ __pycache__/
 .venv/
 tmp/
 
+# Local editing scripts and an incomplete execution snapshot
+/code/.scratch/
+/outputs/execution.checkpoint.ipynb
+
 # Office lock files
 ~$*
