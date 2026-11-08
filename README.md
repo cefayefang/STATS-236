@@ -35,7 +35,7 @@ python3.12 -m venv .venv
 
 Start Jupyter from the repository root and run the cells in order. A full run writes figures to `output/figures/` and tables to `output/tables/`. The default seed is 236. Louvain's resolution is chosen with seeds 236 through 240. Set `STAT236_QUICK=1` for a shorter check that writes to `tmp/quick_output/`. The reported numbers use the full permutation counts.
 
-The interactive page is `html/index.html`. Open it from the `html/` folder so the styles, data, and figure next to it stay available. `html/same_circle_same_playlist.html` is the earlier single-file version.
+The interactive page is `html/index.html`. It loads `style.css`, `data.js`, `app.js`, and the two figures in `html/figures/`, so keep the `html/` folder together when you open or copy it.
 
 ## Repository
 
@@ -43,9 +43,11 @@ The interactive page is `html/index.html`. Open it from the `html/` folder so th
 .
 ├── STAT236_LastFM_Community_Music.ipynb
 ├── html/
-│   ├── index.html                       # current interactive page
-│   ├── same_circle_same_playlist.html   # earlier single-file page
-│   └── figures/data_summary.png
+│   ├── index.html                       # interactive page
+│   ├── style.css                        # page styles
+│   ├── app.js                           # scroll steps and interactive figures
+│   ├── data.js                          # numbers the page draws from
+│   └── figures/                         # data_summary.png, coordinate_views.png
 ├── requirements.txt
 ├── data/                                # network, artists, country labels
 └── output/                              # notebook figures, tables, and partitions

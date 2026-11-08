@@ -17,7 +17,7 @@ function svgEl(name, attrs = {}, text) {
 const STATION_TEXT = {
   'Spectral': 'We take the 11 leading eigenvectors of the mutual-follow adjacency matrix and cluster users by Euclidean distance. Degree is left unadjusted. The largest circle contains 6,830 of the 7,431 users.',
   'SCORE': 'Each user is placed by the ratios of eigenvectors 2 through 11 to the leading eigenvector. Ratios beyond ±log n = ±8.91 are clipped, and that bound applies to 39.3% of the coordinates.',
-  'SCORE+': 'Follows that touch high-degree users are first downweighted with regularization τ = 7.28, the mean degree. We then keep 12 eigenvectors, form ratios as in SCORE, and clip 7.2% of them.',
+  'SCORE+': 'Follows that touch high-degree users are first downweighted with regularization τ = 7.28, the mean degree. We then keep 12 eigenvectors, weight them by their eigenvalues, form ratios, and clip 7.2% of the ratio coordinates.',
   'Louvain': 'Users are moved to raise modularity at resolution γ = 0.25. Across seeds 236 to 240, this resolution has the median circle count closest to 11. The partition shown uses seed 236.'
 };
 
@@ -421,7 +421,7 @@ function mountScrolly(root, startNow) {
   const steps = [...root.querySelectorAll('.step')];
   if (!steps.length) return;
   let active = -1;
-  function activate(i) {
+  let activate = function (i) {
     if (i === active || i < 0) return;
     active = i;
     steps.forEach((s, k) => s.classList.toggle('is-active', k === i));
@@ -450,17 +450,90 @@ function mountScrolly(root, startNow) {
     if (d.shot !== undefined) setShot(+d.shot);
     if (d.pulse) pulse(document.querySelector(d.pulse));
   }
-  const at = matchMedia('(max-width: 820px)').matches ? 70 : 46;
+  // Desktop: the whole section (cards and graphic) pins at the centre of the
+  // viewport. Scrolling only moves the highlight from card to card; nothing
+  // drifts. After the last card the section scrolls away as one piece.
+  // If the cards do not fit, the card column steps to the active card.
+  const graphic = root.querySelector('.scrolly-graphic');
+  const col = root.querySelector('.scrolly-steps');
+  const narrow = matchMedia('(max-width: 820px)');
+  const pin = document.createElement('div');
+  pin.className = 'scrolly-pin';
+  root.insertBefore(pin, col);
+  pin.append(col, graphic);
+  const track = document.createElement('div');
+  track.className = 'scrolly-track';
+  steps.forEach(st => track.append(st));
+  col.append(track);
+  root.classList.add('is-pinned');
+
+  let maxH = 0, lastW = innerWidth, D = 0, pinTop = 0, pinH = 0;
+  const n = steps.length;
+  function layout() {
+    if (narrow.matches) {
+      root.style.height = pin.style.top = graphic.style.minHeight = col.style.height = track.style.transform = '';
+      col.classList.remove('is-clipped');
+      maxH = 0;
+      return;
+    }
+    if (innerWidth !== lastW) { lastW = innerWidth; graphic.style.minHeight = ''; maxH = graphic.offsetHeight; }
+    // Hold the graphic at the tallest height seen so it does not jitter.
+    const gH = maxH = Math.max(maxH, graphic.offsetHeight);
+    graphic.style.minHeight = gH + 'px';
+    const vh = innerHeight;
+    const stepsH = track.scrollHeight;
+    pinH = Math.max(gH, Math.min(stepsH, vh - 20));
+    col.style.height = pinH + 'px';
+    col.classList.toggle('is-clipped', stepsH > pinH + 1);
+    pinTop = Math.max(10, (vh - pinH) / 2);
+    pin.style.top = pinTop + 'px';
+    D = n * Math.round(vh * 0.3);
+    root.style.height = (pinH + D) + 'px';
+    place();
+    onScroll();
+  }
+  function place() {
+    if (narrow.matches || active < 0) return;
+    const over = track.scrollHeight - pinH;
+    if (over <= 1) { track.style.transform = ''; return; }
+    const s = steps[active];
+    const c = s.offsetTop + s.offsetHeight / 2 - pinH / 2;
+    track.style.transform = 'translateY(' + (-Math.max(0, Math.min(over, c))) + 'px)';
+  }
+  function onScroll() {
+    if (narrow.matches || !D) return;
+    const r = root.getBoundingClientRect();
+    if (r.bottom < 0 || r.top > innerHeight) return;
+    const prog = (pinTop - r.top) / D;
+    activate(Math.max(0, Math.min(n - 1, Math.floor(prog * n))));
+  }
+  const _activate = activate;
+  activate = i => { const was = active; _activate(i); if (active !== was) place(); };
+  addEventListener('scroll', onScroll, { passive: true });
+  addEventListener('resize', layout);
+  new ResizeObserver(layout).observe(graphic);
+
+  // Narrow screens keep the simple stacked layout with a reading line.
   const io = new IntersectionObserver(entries => {
+    if (!narrow.matches) return;
     entries.forEach(e => { if (e.isIntersecting) activate(steps.indexOf(e.target)); });
-  }, { rootMargin: '-' + at + '% 0px -' + (100 - at) + '% 0px', threshold: 0 });
-  steps.forEach(s => {
+  }, { rootMargin: '-70% 0px -30% 0px', threshold: 0 });
+  // Measure the graphic at every step once, so its height (and the pinned
+  // position) never changes while reading. Off-screen, so nothing is seen.
+  if (!narrow.matches) {
+    steps.forEach((_, k) => { _activate(k); maxH = Math.max(maxH, graphic.offsetHeight); });
+    active = -1;
+  }
+  steps.forEach((s, k) => {
     io.observe(s);
     s.addEventListener('click', e => {
       if (s.classList.contains('is-active') || e.target.closest('a, button, input, label')) return;
-      s.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' });
+      if (narrow.matches) { s.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' }); return; }
+      const y = root.getBoundingClientRect().top + scrollY - pinTop + (k + 0.5) / n * D;
+      scrollTo({ top: y, behavior: reduce ? 'auto' : 'smooth' });
     });
   });
+  layout();
   if (startNow) activate(0);
 }
 function startScrolly() {

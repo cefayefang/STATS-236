@@ -133,6 +133,7 @@
     <h2 id="circles-title">Four ways to draw the circles</h2>
   </div>
   <p>The question is already fixed. These four methods are how we study it. Each one uses only the follow network, and each one returns 11 circles. The dots are the same 7,431 people. Press a station, or use the previous and next buttons. The people stay put. The colors change.</p>
+  <p class="frame-note"><strong>How to read the map.</strong> Dots are users and lines are mutual follows. Positions come from an igraph Fruchterman–Reingold layout of the follow network. All four methods share this map; colors show their different groups. These display positions are separate from the coordinates used for clustering. Nearness does not directly measure music similarity.</p>
   <div class="scrolly" data-scrolly>
     <div class="scrolly-steps">
       <article class="step" data-station="Spectral">
@@ -146,21 +147,22 @@
         <div class="step-card">
           <div class="step-n">Method 2</div>
           <h3>SCORE</h3>
-          <p>SCORE divides later coordinates by a popularity factor, so two people in the same circle are not pushed apart just because one has more follows. The circles become more even.</p>
+          <p>SCORE divides later eigenvector coordinates by the first one. This aims to reduce differences caused by how many follows a user has. Tiny denominators can still create extreme ratios, so we limit them by clipping. The circles become more even.</p>
         </div>
       </article>
       <article class="step" data-station="SCORE+">
         <div class="step-card">
           <div class="step-n">Method 3</div>
           <h3>SCORE+</h3>
-          <p>SCORE+ first gives less weight to follows that touch very popular users, then uses the same kind of ratio as SCORE. The circles are fairly even, and they are not the same circles.</p>
+          <p>SCORE+ first gives less weight to follows that touch users with many connections. It then computes new eigenvectors, weights them by their eigenvalues, and takes ratios. We also clip these ratios. The circles are fairly even, and they are not the same circles.</p>
         </div>
       </article>
       <article class="step" data-station="Louvain">
         <div class="step-card">
           <div class="step-n">Method 4</div>
           <h3>Louvain</h3>
-          <p>Louvain does not use those coordinates. It moves people so that more follows sit inside circles than popularity alone would produce. Its circles line up most closely with country.</p>
+          <p>Louvain seeks groups with more internal follows than a degree-based benchmark predicts. It moves users between groups to raise modularity, then treats each group as a node and repeats. It uses no eigenvector coordinates. Its circles line up most closely with country.</p>
+          <p>Louvain does not take 11 as an input. We choose resolution γ = 0.25 using the network only; the final run returns 11 groups.</p>
         </div>
       </article>
     </div>
@@ -189,6 +191,51 @@
       <p class="status" id="status"></p>
       <div class="readout" id="readout"></div>
     </div>
+  </div>
+  <div class="method-details" aria-label="More about the methods and display">
+    <details>
+      <summary>How are users placed on the map?</summary>
+      <div class="method-detail-body">
+        <p>Each user starts at a random point. Connected users attract each other, while nearby users repel. The algorithm updates their positions over 1,500 iterations using seed 236. We reuse the saved positions for every method.</p>
+        <p>The distance is the Euclidean distance between two current positions on the screen. It changes as the points move. The adjacency matrix A tells us which users are connected; it does not supply a physical distance.</p>
+        <p class="method-formula">r<sub>ij</sub> = √[(x<sub>i</sub> − x<sub>j</sub>)² + (y<sub>i</sub> − y<sub>j</sub>)²]</p>
+        <p>In igraph’s scaling, the attraction magnitude is A<sub>ij</sub>r<sub>ij</sub>² and the repulsion magnitude is 1/r<sub>ij</sub>. A<sub>ij</sub> is 1 for a mutual follow and 0 otherwise. All edges have equal weight. These are drawing rules, not measured social forces. For this large network, igraph uses a grid approximation to calculate repulsion among nearby points.</p>
+        <p>Music, country, and community labels do not determine the positions. The axes have no real-world units. Two nearby dots need not share a direct tie, the same music, or the same community.</p>
+        <p class="note"><a href="https://igraph.org/c/html/0.10.2/igraph-Layout.html#igraph_layout_fruchterman_reingold">Read the igraph layout documentation</a>.</p>
+      </div>
+    </details>
+    <details>
+      <summary>How does Louvain find groups?</summary>
+      <div class="method-detail-body">
+        <p>Modularity compares edges inside groups with a random-network benchmark that allows users with more connections to have more edges. Louvain searches for groups with more internal edges than this benchmark predicts.</p>
+        <ol>
+          <li><strong>Move users.</strong> Start with one group per user. Move each user to a neighboring group if the move raises modularity. Repeat until no individual move improves the score.</li>
+          <li><strong>Combine groups.</strong> Replace each group with a node in a smaller network. Its edges keep the total weight of connections between groups. Repeat the search on this network.</li>
+        </ol>
+        <p>The search stops when the improvement is too small. It is greedy, so it need not find the highest possible modularity, and the random visit order can affect the result.</p>
+        <p>Resolution γ controls the grouping scale. Larger values tend to favor smaller groups. We test ten resolutions from 0.05 to 1, using seeds 236 through 240. We choose γ = 0.25 because its median group count is closest to the graph-selected K = 11. The final partition uses seed 236. Music and country play no part in this choice.</p>
+        <p class="note"><a href="https://arxiv.org/abs/0803.0476">Read the Louvain paper</a>.</p>
+      </div>
+    </details>
+    <details>
+      <summary>What changes from Spectral to SCORE and SCORE+?</summary>
+      <div class="method-detail-body">
+        <p>These plots show the same users in method coordinates. They are different from the shared network map above. No communities are fitted and no K is selected to draw these views.</p>
+        <figure class="coordinate-figure">
+          <a href="figures/coordinate_views.png" target="_blank" rel="noopener" aria-label="Open a larger version of the three coordinate plots">
+            <img src="figures/coordinate_views.png" loading="lazy" width="2075" height="654" alt="Three uncolored scatter plots: raw eigenvector coordinates for Spectral, clipped ratios for SCORE, and clipped eigenvalue-weighted ratios for SCORE+.">
+          </a>
+          <figcaption>Each dot is one user. Select the image to view it at full size. SCORE and SCORE+ share the same axis limits.</figcaption>
+        </figure>
+        <ol>
+          <li><strong>Spectral</strong> uses eigenvector entries of the adjacency matrix A. The plot shows the first and second entries.</li>
+          <li><strong>SCORE</strong> divides later entries by the first. The plot shows ξ₂/ξ₁ and ξ₃/ξ₁. In the idealized degree-corrected model, this division removes a shared degree factor.</li>
+          <li><strong>SCORE+</strong> first changes A to L<sub>τ</sub> = (D + τI)<sup>−1/2</sup>A(D + τI)<sup>−1/2</sup>, where D holds degrees and τ is the mean degree. It then uses the new eigenvectors u and eigenvalues λ. The plot shows λ₂u₂/(λ₁u₁) and λ₃u₃/(λ₁u₁).</li>
+        </ol>
+        <p><strong>Clipping means setting bounds.</strong> Both ratio plots limit values to ±log(n) = ±8.91. A value of 12 or 100 becomes 8.91; −20 becomes −8.91. Every user stays, but differences beyond the bounds are lost. This creates the rows of points along the boundaries. Adding clipping to SCORE+ is our implementation choice.</p>
+        <p>The full clustering uses 10 coordinates for SCORE and 11 for SCORE+, not just these two. SCORE+ can also keep an extra direction under its weak-signal rule; these views do not illustrate that choice. A more spread-out plot alone does not show that a method is better.</p>
+      </div>
+    </details>
   </div>
 </section>
 
